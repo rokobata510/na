@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# Ignore everything
+*
+
+# Don't ignore the "resources" folder and its content
+!Assets/
+!Assets/resources/**
