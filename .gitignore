@@ -366,4 +366,8 @@ FodyWeavers.xsd
 
 # Don't ignore the "resources" folder and its content
 !Assets/
-!Assets/resources/**
+!Assets/resources/
+!Assets/resources/scripts/
+!Assets/resources/scripts/**
+!*cd
+!

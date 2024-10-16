@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AEnemyAI" Collapsed="true">
+    <Position X="6" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAKAAAAAAAAAAAEAAAAAAAAAAAAABAgAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\AEnemyAI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AProjectile" Collapsed="true">
+    <Position X="13.5" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAQAAEAEAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\AProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CircleAI">
+    <Position X="6" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\CircleAI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AProp" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\AProp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FirstProjectile" Collapsed="true">
+    <Position X="13.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\FirstProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.MonoBehaviour" Collapsed="true">
+    <Position X="7" Y="0.5" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="AWeapon" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAIggAgAAAAAEBAAAIAAAAAiAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\AWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AMeleeWeapon" Collapsed="true">
+    <Position X="10.75" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\AMeleeWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FirstMeleeWeapon" Collapsed="true">
+    <Position X="10.75" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\FirstMeleeWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ARangedWeapon" Collapsed="true">
+    <Position X="8.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\ARangedWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FirstRangedWeapon" Collapsed="true">
+    <Position X="8.25" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\FirstRangedWeapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AAttackStrategy" Collapsed="true">
+    <Position X="12.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAACAAI=</HashCode>
+      <FileName>Assets\Resources\Scripts\AttackStrategies\AAttackStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RandomAttackStrategy" Collapsed="true">
+    <Position X="12.25" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAI=</HashCode>
+      <FileName>Assets\Resources\Scripts\AttackStrategies\RandomAttackStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoTowardsPlayerAttackStrategy" Collapsed="true">
+    <Position X="9.25" Y="8.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\AttackStrategies\GoTowardsPlayerAttackStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAttackStrategy" Collapsed="true">
+    <Position X="15" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAI=</HashCode>
+      <FileName>Assets\Resources\Scripts\AttackStrategies\PlayerAttackStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MonoBehaviourWithYLevelHandler" Collapsed="true">
+    <Position X="6.75" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\MonoBehaviourWithYLevelHandler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACanBeAttacked" Collapsed="true">
+    <Position X="3" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAACBAAgAgAAAAAACAAAAAAAAAAAAAAAAAAAk=</HashCode>
+      <FileName>Assets\Resources\Scripts\ACanBeAttacked.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ADealsDamage" Collapsed="true">
+    <Position X="13.25" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAggAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\ADealsDamage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerScript" Collapsed="true">
+    <Position X="3.5" Y="6.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAKAAADAwACAAgAAAAAQAAAgIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\PlayerScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AActor" Collapsed="true">
+    <Position X="4.75" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAgAAAkAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\AActor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Dummy" Collapsed="true">
+    <Position X="1" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\Dummy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
