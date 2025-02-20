@@ -6,5 +6,6 @@ public class ActorEvents: AttackableEvents
     public UnityEvent OnIdle = new();
     public UnityEvent OnDealsDamage = new();
     public UnityEvent OnKill = new();
+    public UnityEvent OnWeaponChange = new();
 }
 

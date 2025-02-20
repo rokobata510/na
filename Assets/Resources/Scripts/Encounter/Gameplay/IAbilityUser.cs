@@ -1,0 +1,5 @@
+﻿interface IAbilityUser
+{
+    void UseAbility();
+}
+

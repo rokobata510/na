@@ -2,5 +2,5 @@
 public class PlayerEvents: ActorEvents
 {
     public UnityEvent OnRolling = new();
-    public UnityEvent OnPlayerNotRolling = new();
+    public UnityEvent OnNotRolling = new();
 }

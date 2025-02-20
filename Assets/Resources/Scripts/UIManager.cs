@@ -6,7 +6,7 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
     public GameObject pauseMenu;
-    protected bool isPaused = false;
+    public static bool isPaused = false;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))

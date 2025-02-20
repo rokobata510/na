@@ -19,14 +19,11 @@ public class NormalizedVector3 : AOverridenVector3
 
     public NormalizedVector3(float x, float y, float z)
     {
-        X = x;
-        Y = y;
-        Z = z;
+        Vector = new Vector3(x, y, z).normalized;
     }
 
-
-    public NormalizedVector3(float x, float y) => new NormalizedVector3(x, y, 0);
-    public NormalizedVector3() => new NormalizedVector3(0, 0, 0);
+    public NormalizedVector3(float x, float y) : this(x, y, 0) { }
+    public NormalizedVector3() : this(0, 0, 0) { }
 
     public static implicit operator NormalizedVector3(Vector3 v) => new(v);
     public static implicit operator NormalizedVector3(Vector2 v) => new(v);
