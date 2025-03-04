@@ -11,7 +11,6 @@ public static class RandomManager
     {
         if (worldRandomState.Equals(default(UnityEngine.Random.State)))
         {
-            UnityEngine.Random.InitState(101);
             worldRandomState = UnityEngine.Random.state;
         }
         if (unseededRandomState.Equals(default(UnityEngine.Random.State)))
@@ -32,6 +31,7 @@ public static class RandomManager
     public static float WorldRange(float min, float max) => WithRandomState(() => UnityEngine.Random.Range(min, max), ref worldRandomState);
     public static int WorldRange(int min, int max) => WithRandomState(() => UnityEngine.Random.Range(min, max), ref worldRandomState);
     public static float WorldValue() => WithRandomState(() => UnityEngine.Random.value, ref worldRandomState);
+    public static void WorldSeed(int seed) => UnityEngine.Random.InitState(seed);
 
     public static float EncounterRange(float min, float max) => WithRandomState(() => UnityEngine.Random.Range(min, max), ref encounterRandomState);
     public static int EncounterRange(int min, int max) => WithRandomState(() => UnityEngine.Random.Range(min, max), ref encounterRandomState);

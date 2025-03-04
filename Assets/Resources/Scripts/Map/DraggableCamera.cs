@@ -54,7 +54,7 @@ public class DraggableCamera : MonoBehaviour
             OriginWorldSpace = Camera.main.ScreenToViewportPoint(Input.mousePosition);
             return;
         }
-        if (Input.mouseScrollDelta.y != 0)
+        if (Input.mouseScrollDelta.y != 0&& Time.timeScale>0)
         {
             transform.Translate(new UnnormalizedVector3(0, Input.mouseScrollDelta.y), Space.World);
             if (transform.position.y > maxY)

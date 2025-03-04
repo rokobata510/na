@@ -7,6 +7,7 @@ public abstract class AItem : ScriptableObject
 {
     public string itemName;
     public string itemDescription;
+    public int cost;
     public Sprite sprite;
     public AEffect effect;
     public ATargeting targeting;

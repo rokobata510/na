@@ -24,11 +24,7 @@ public class RunTowardsPlayerMovementStrategy : AEnemyMovementStrategy
             UpdateTargetGameObjectPosition();
         }
 
-        if (StandingOnTarget())
-        {
-            nextStepPosition = new UnnormalizedVector3();
-        }
-        else if (EnemyHasBeenSeen())
+        if (!StandingOnTarget() && EnemyHasBeenSeen())
         {
             if (canSeeTarget)
             {
@@ -39,6 +35,10 @@ public class RunTowardsPlayerMovementStrategy : AEnemyMovementStrategy
                 SetNextStepPositionToFirstStepOfThePath();
             }
 
+        }
+        else
+        {
+            nextStepPosition = new UnnormalizedVector3();
         }
         Debug.DrawRay(origin.transform.position, nextStepPosition, Color.blue, 1);
 

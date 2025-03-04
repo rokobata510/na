@@ -1,11 +1,14 @@
+using UnityEditor.Graphs;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class InventoryRenderer : AGridPanelRenderer
 {
-    [Header("Inventory Specific")]
     public Color backDropColor;
     public Color selectedItemColor;
+    public override int PanelWidth => margin + Columns * (slotWidth + margin);
+    public override int PanelHeight => margin + Rows * (slotHeight + margin);
+
 
     protected override void Awake()
     {
@@ -18,7 +21,7 @@ public class InventoryRenderer : AGridPanelRenderer
         slot.GetComponent<Image>().color = backDropColor;
     }
 
-    private new void OnGUI()
+    private void OnGUI()
     {
         Event e = Event.current;
         if (e.type == EventType.KeyDown && e.keyCode == KeyCode.Tab)
@@ -57,21 +60,18 @@ public class InventoryRenderer : AGridPanelRenderer
         Image slotImage = slot.GetComponent<Image>();
         Button slotButton = slot.GetComponent<Button>();
 
-        // Create item display
-        GameObject itemDisplay = new GameObject("ItemDisplay");
+        GameObject itemDisplay = new("ItemDisplay");
         Image itemImage = itemDisplay.AddComponent<Image>();
         itemImage.sprite = item.sprite;
         itemImage.transform.SetParent(slot.transform);
         itemImage.rectTransform.sizeDelta = new Vector2(slotWidth, slotHeight);
-
-        // Setup button functionality
+        itemImage.rectTransform.localPosition = Vector3.zero;
         slotButton.enabled = true;
-        slotButton.onClick.AddListener(() => ToggleItemEquip(item, slotImage));
-
-        UpdateSlotColor(item, slotImage);
+        slotButton.onClick.AddListener(() => ToggleItemEquip(item, slot));
+        UpdateSlotColor(item, slot);
     }
 
-    private void ToggleItemEquip(AItem item, Image slotImage)
+    private void ToggleItemEquip(AItem item, GameObject slot)
     {
         if (Inventory.Instance.EquippedItems.Contains(item))
         {
@@ -81,12 +81,12 @@ public class InventoryRenderer : AGridPanelRenderer
         {
             Inventory.Instance.EquippedItems.Add(item);
         }
-        UpdateSlotColor(item, slotImage);
+        UpdateSlotColor(item, slot);
     }
 
-    private void UpdateSlotColor(AItem item, Image slotImage)
+    private void UpdateSlotColor(AItem item, GameObject slot)
     {
-        slotImage.color = Inventory.Instance.EquippedItems.Contains(item)
+        slot.GetComponent<Image>().color = Inventory.Instance.EquippedItems.Contains(item)
             ? selectedItemColor
             : backDropColor;
     }

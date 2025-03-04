@@ -4,6 +4,6 @@
 
 public class PlayerAttackStrategy : AAttackStrategy
 {
-    public override bool WantsToAttack(UnnormalizedVector3 origin) => Input.GetMouseButton(0) && !UIManager.isPaused;
+    public override bool WantsToAttack(UnnormalizedVector3 origin) => Input.GetMouseButton(0) && !PauseMenuManager.isPaused;
 }
 

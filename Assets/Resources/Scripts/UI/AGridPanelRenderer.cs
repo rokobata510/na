@@ -3,9 +3,8 @@ using UnityEngine.UI;
 
 public abstract class AGridPanelRenderer : MonoBehaviour
 {
-    [Header("Grid Configuration")]
-    public int Columns;
     public int Rows;
+    public int Columns;
     public int slotWidth;
     public int slotHeight;
     public int margin;
@@ -14,8 +13,8 @@ public abstract class AGridPanelRenderer : MonoBehaviour
     protected Image panelImage;
     protected GameObject[,] slots;
 
-    public int PanelWidth => margin + Columns * (slotWidth + margin);
-    public int PanelHeight => margin + Rows * (slotHeight + margin);
+    public abstract int PanelWidth { get; }
+    public abstract int PanelHeight { get; }
 
     protected virtual void Awake()
     {
@@ -26,7 +25,7 @@ public abstract class AGridPanelRenderer : MonoBehaviour
         CreateSlots();
     }
 
-    protected void CreateSlots()
+    protected virtual void CreateSlots()
     {
         float startingX = -PanelWidth / 2 + margin + (slotWidth / 2);
         float startingY = PanelHeight / 2 - (margin + (slotHeight / 2));
@@ -52,11 +51,11 @@ public abstract class AGridPanelRenderer : MonoBehaviour
 
     protected virtual void InitializeSlot(GameObject slot)
     {
-        // Base implementation can set up default slot appearance
         Image slotImage = slot.GetComponent<Image>();
         slotImage.enabled = false;
         slot.GetComponent<Button>().enabled = false;
     }
+
 
     public void ToggleVisibility(bool visible)
     {
@@ -66,7 +65,7 @@ public abstract class AGridPanelRenderer : MonoBehaviour
         if (visible) OnPanelShown();
         else OnPanelHidden();
     }
-
+    public void ToggleVisibility() => ToggleVisibility(!panelImage.enabled);
     protected void UpdateSlotVisibility(bool visible)
     {
         foreach (GameObject slot in slots)

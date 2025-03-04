@@ -21,8 +21,8 @@ public sealed class Inventory : ScriptableObject
         }
         set
         {
-            inventoryEvents.OnGoldChanged.Invoke();
             gold = value;
+            inventoryEvents.OnGoldChanged.Invoke();
         }
     }
     public List<AWeapon> Weapons

@@ -8,7 +8,6 @@ public abstract class AMapNode : MonoBehaviour
 {
     public int row;
     public int column;
-    public List<Encounter> Encounters;
     List<AMapNode> routesFromHere = new();
     List<GameObject> linesFromHere = new();
     public MapNodeEvents events = new();
@@ -17,6 +16,7 @@ public abstract class AMapNode : MonoBehaviour
     private Color colorBeforeHover;
     private bool hoverHasTriggered = false;
     public int seed;
+    public List<Encounter> Encounters;
     public List<AMapNode> RoutesFromHere => routesFromHere;
     public List<GameObject> LinesFromHere => linesFromHere;
     public void Start()

@@ -12,16 +12,16 @@ public class Map : MonoBehaviour
     private int BossRow => MaxRows + 1;
     public int MiddleColumn => MaxColumns / 2;
     public int MaxColumns = 7;
-    public float basicWeight;
     public GameObject EnemyNodePrefab;
-    public float eliteWeight;
+    public float basicWeight;
     public GameObject eliteNodePrefab;
-    public float mysteryWeight;
+    public float eliteWeight;
     public GameObject mysteryNodePrefab;
-    public float treasureWeight;
+    public float mysteryWeight;
     public GameObject treasureNodePrefab;
-    public float shopWeight;
+    public float treasureWeight;
     public GameObject shopNodePrefab;
+    public float shopWeight;
     public GameObject bossNodePrefab;
     public GameObject linePrefab;
     public float nodeGenerationChance = 0.5f;
@@ -31,27 +31,26 @@ public class Map : MonoBehaviour
     AMapNode lastHoveredNode = null;
     private bool playerHasEnteredCurrentEncounter = true;
     public static List<AMapNode> Nodes { get => nodes; set => nodes = value; }
-
     private static Map instance;
-    public static Map Instance {get;}
 
-    public void Start()
+
+    public void OnEnable()
     {
-        if(instance != null)
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
         {
             Destroy(gameObject);
             return;
         }
-        instance = this;
         DontDestroyOnLoad(gameObject);
         if (MaxColumns % 2 == 0)
         {
             throw new ArgumentException("MaxColumns must be odd");
         }
-        if (nodes.Count > 0)
-        {
-            return;
-        }
+        nodes = new();
         GenerateBossNode();
         GenerateMap();
         GenerateFallbackRoutes();
@@ -72,20 +71,12 @@ public class Map : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && !playerHasEnteredCurrentEncounter)
         {
             playerHasEnteredCurrentEncounter = true;
-            SceneManager.LoadScene("Encounter");
-            foreach (Transform child in transform)
-            {
-                if (child.TryGetComponent(out Renderer renderer))
-                {
-                    renderer.enabled = false;
-                }
-                if(child.TryGetComponent(out Collider2D collider))
-                {
-                    collider.enabled = false;
-                }
-            }
             playerOccupiedNode.EnterEncounter();
         }
+    }
+    public void OnDestroy()
+    {
+        instance = null;
     }
     private void HandlePlayerMovement(RaycastHit2D hit)
     {

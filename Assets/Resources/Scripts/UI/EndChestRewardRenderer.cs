@@ -7,6 +7,8 @@ public class EndChestRewardRenderer : AGridPanelRenderer
     private AItem[] items;
     private float chestGold;
 
+    public override int PanelWidth => margin + Columns * (slotWidth + margin);
+    public override int PanelHeight => margin + Rows * (slotHeight + margin);
     public void SetChestData(float gold)
     {
         chestGold = gold;

@@ -1,11 +1,14 @@
 ﻿
 using UnityEngine;
 
-internal class ShopNode:AMapNode
-    {
+internal class ShopNode : AMapNode
+{
     public override void EnterEncounter()
     {
-        Debug.Log("Entered Shop Encounter at (" + column + " " + row + ")");
+        EncounterRandomStream.Seed(seed);
+        ShopRenderer shopRenderer = GameObject.Find("ShopRenderer").GetComponent<ShopRenderer>();
+        shopRenderer.ToggleVisibility();
+
     }
 }
 

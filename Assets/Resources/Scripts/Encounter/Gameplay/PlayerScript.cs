@@ -8,12 +8,11 @@ public sealed class PlayerScript : AActor
     public override AMovementStrategy MovementStrategy { get => movementStrategy; set => movementStrategy = (PlayerMovementStrategy)value; }
     PlayerMovementStrategy movementStrategyInstance;
     public override AMovementStrategy MovementStrategyInstance { get => movementStrategyInstance; set => movementStrategyInstance = (PlayerMovementStrategy)value; }
-    TextMeshProUGUI HealthDisplay;
     public float rollSpeedMultiplier = 1f;
     public float rollTime = 0.6f;
     public float rollCooldown = 2f;
     private float timeOfLastRoll = 0;
-
+    public GameObject deathScreen;
 
 
     [SerializeField] PlayerEvents events = new();
@@ -28,6 +27,7 @@ public sealed class PlayerScript : AActor
         events.OnRolling.AddListener(() => animator.SetBool("isRolling", true));
         events.OnIdle.AddListener(() => animator.SetBool("isWalking", false));
         events.OnNotRolling.AddListener(() => animator.SetBool("isRolling", false));
+        events.OnDeath.AddListener(() => deathScreen.SetActive(true));
 
     }
 
@@ -42,6 +42,10 @@ public sealed class PlayerScript : AActor
         {
             Interact();
 
+        }
+        if (health <= 0)
+        {
+            Die();
         }
         void RollIfNeeded()
         {
@@ -110,6 +114,6 @@ public sealed class PlayerScript : AActor
 
     public override void Die()
     {
-        throw new System.NotImplementedException();
+        events.OnDeath.Invoke();
     }
 }
