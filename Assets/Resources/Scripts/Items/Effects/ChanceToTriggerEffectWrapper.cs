@@ -10,7 +10,7 @@ public class ChanceToTriggerEffectWrapper : AEffect
     {
         int guaranteedProcs = (int)triggerPercentage / 100;
         float chanceForLastProc = triggerPercentage % 100;
-        for (int i = 0; i< guaranteedProcs; i++)
+        for (int i = 0; i < guaranteedProcs; i++)
             effect.TriggerEffect(targets);
         if (RandomManager.EncounterValue() * 100f <= chanceForLastProc)
         {

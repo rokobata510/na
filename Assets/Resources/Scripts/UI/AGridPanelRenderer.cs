@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public abstract class AGridPanelRenderer : MonoBehaviour
 {
@@ -12,7 +14,7 @@ public abstract class AGridPanelRenderer : MonoBehaviour
 
     protected Image panelImage;
     protected GameObject[,] slots;
-
+    public TMP_Text descriptionText;
     public abstract int PanelWidth { get; }
     public abstract int PanelHeight { get; }
 
@@ -54,8 +56,57 @@ public abstract class AGridPanelRenderer : MonoBehaviour
         Image slotImage = slot.GetComponent<Image>();
         slotImage.enabled = false;
         slot.GetComponent<Button>().enabled = false;
+
+        EventTrigger eventTrigger = slot.GetComponent<EventTrigger>();
+        if (eventTrigger == null)
+            eventTrigger = slot.AddComponent<EventTrigger>();
+
+        EventTrigger.Entry pointerEnter = new EventTrigger.Entry();
+        pointerEnter.eventID = EventTriggerType.PointerEnter;
+        pointerEnter.callback.AddListener((data) => { OnSlotHover(slot); });
+
+        EventTrigger.Entry pointerExit = new EventTrigger.Entry();
+        pointerExit.eventID = EventTriggerType.PointerExit;
+        pointerExit.callback.AddListener((data) => { OnSlotHoverEnd(); });
+
+        eventTrigger.triggers.Add(pointerEnter);
+        eventTrigger.triggers.Add(pointerExit);
     }
 
+    protected virtual void OnSlotHover(GameObject slot)
+    {
+        string name = GetSlotName(slot);
+        string description = GetSlotDescription(slot);
+        ShowDescription(name, description);
+    }
+
+    protected virtual void OnSlotHoverEnd()
+    {
+        HideDescription();
+    }
+
+    protected virtual void ShowDescription(string name, string description)
+    {
+        if (descriptionText != null)
+        {
+            descriptionText.enabled = true;
+            descriptionText.text = $"{name}: \n{description}";
+        }
+        GameObject.Find("HoverDescriptionImage").GetComponent<Image>().enabled = true;
+    }
+
+    protected virtual void HideDescription()
+    {
+        if (descriptionText != null)
+        {
+            descriptionText.enabled = false;
+            descriptionText.text = "";
+        }
+        GameObject.Find("HoverDescriptionImage").GetComponent<Image>().enabled = false;
+    }
+
+    protected virtual string GetSlotName(GameObject slot) => "";
+    protected virtual string GetSlotDescription(GameObject slot) => "";
 
     public void ToggleVisibility(bool visible)
     {
@@ -65,7 +116,9 @@ public abstract class AGridPanelRenderer : MonoBehaviour
         if (visible) OnPanelShown();
         else OnPanelHidden();
     }
+
     public void ToggleVisibility() => ToggleVisibility(!panelImage.enabled);
+
     protected void UpdateSlotVisibility(bool visible)
     {
         foreach (GameObject slot in slots)

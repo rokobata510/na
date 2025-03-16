@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
 public abstract class AItem : ScriptableObject
 {
-    public string itemName;
-    public string itemDescription;
+    public new string name;
+    public string description;
     public int cost;
     public Sprite sprite;
     public AEffect effect;
@@ -16,7 +15,7 @@ public abstract class AItem : ScriptableObject
 
     public virtual void Effect()
     {
-        if(!effect.standalone)
+        if (!effect.standalone)
         {
             throw new Exception("Effect of " + GetType() + " must be standalone");
         }

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Collider2D))]
@@ -28,10 +26,11 @@ public abstract class AActor : AAttackable
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         attackStrategyInstance = attackStrategy.Clone();
-        MovementStrategyInstance = MovementStrategy.Clone();
+        MovementStrategyInstance = Instantiate(MovementStrategy);
         ((ActorEvents)Events).OnIdle.AddListener(() => animator.SetBool("isWalking", false));
         ((ActorEvents)Events).OnWalking.AddListener(() => animator.SetBool("isWalking", true));
         ((ActorEvents)Events).OnWeaponChange.AddListener(() => EquipWeapon());
+        ((ActorEvents)Events).OnWeaponChange.Invoke();
     }
 
     private void EquipWeapon()
@@ -43,7 +42,6 @@ public abstract class AActor : AAttackable
     protected virtual void AttackLogic()
     {
         attackStrategyInstance.SetTarget(origin: (UnnormalizedVector3)transform.position);
-        weaponScript.Point((UnnormalizedVector3)transform.position, attackStrategyInstance.targetDirection);
         if (attackStrategyInstance.WantsToAttack((UnnormalizedVector3)transform.position))
         {
             weaponScript.Attack(gameObject, attackStrategyInstance.targetGameObject.transform.position);
@@ -62,12 +60,6 @@ public abstract class AActor : AAttackable
         return newWeapon;
     }
 
-    public override void Die()
-    {
-        Events.OnDeath.Invoke();
-        Destroy(weaponScript.gameObject);
-        Destroy(gameObject);
-    }
     protected void FlipSpriteIfNeeded()
     {
         if (target.X < transform.position.x)
@@ -75,7 +67,11 @@ public abstract class AActor : AAttackable
         else if (target.X > transform.position.x)
             spriteRenderer.flipX = false;
     }
-    protected virtual void GetNextStepTarget() => target = transform.position + MovementStrategyInstance.GetNextStep(gameObject);
+    protected virtual void GetNextStepTarget()
+    {
+        target = transform.position + MovementStrategyInstance.GetNextStep(gameObject);
+    }
+
     protected virtual void MoveToTarget()
     {
         rigidBody.MovePosition(Vector2.MoveTowards(transform.position, (Vector2)target, MovementSpeed * Time.deltaTime));

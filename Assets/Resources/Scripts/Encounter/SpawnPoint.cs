@@ -17,7 +17,7 @@ public class SpawnPoint : MonoBehaviour
     public int SpawnAll()
     {
         int circuitBreaker = 1000;
-        while (availablePoints > 0&& circuitBreaker>0)
+        while (availablePoints > 0 && circuitBreaker > 0)
         {
             circuitBreaker--;
             availablePoints -= SpawnOne(availablePoints);
@@ -48,7 +48,7 @@ public class SpawnPoint : MonoBehaviour
         }
         float maxHorizontalOffset = transform.lossyScale.x / 2;
         float maxVerticalOffset = transform.lossyScale.y / 2;
-        UnnormalizedVector3 spawnPosition = new(transform.position.x + EncounterRandomStream.Range(-maxHorizontalOffset, maxHorizontalOffset), transform.position.y + EncounterRandomStream.Range(-maxVerticalOffset,maxVerticalOffset));
+        UnnormalizedVector3 spawnPosition = new(transform.position.x + EncounterRandomStream.Range(-maxHorizontalOffset, maxHorizontalOffset), transform.position.y + EncounterRandomStream.Range(-maxVerticalOffset, maxVerticalOffset));
         Instantiate(enemy, spawnPosition, Quaternion.identity);
 
         if (availablePoints < enemyAI.spawnCost)

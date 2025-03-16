@@ -1,6 +1,4 @@
-﻿
-using Codice.CM.Common;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
@@ -33,6 +31,9 @@ public class DeathScreen : MonoBehaviour
     public void DestroyMap()
     {
         GameObject map = GameObject.Find("Map");
+        map.GetComponent<Map>().playerOccupiedNode = null;
+        Map.mapHasBeenGenerated = false;
+        
         Destroy(map);
     }
 }

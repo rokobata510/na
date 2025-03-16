@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ClonableScriptableObject:ScriptableObject 
+public class ClonableScriptableObject : ScriptableObject
 {
     public ClonableScriptableObject Clone()
     {

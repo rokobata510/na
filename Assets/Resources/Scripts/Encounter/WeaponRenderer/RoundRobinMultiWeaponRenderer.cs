@@ -9,7 +9,7 @@ public class RoundRobinMultiWeaponRenderer : AWeaponRenderer
     private int currentIndex = 1;
 
     public int CurrentIndex
-    {  
+    {
         get => currentIndex;
         set
         {

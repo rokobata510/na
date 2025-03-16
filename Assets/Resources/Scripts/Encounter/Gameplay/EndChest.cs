@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class EndChest : MonoBehaviour, IInteractable
 {
@@ -21,9 +20,8 @@ public class EndChest : MonoBehaviour, IInteractable
     {
         while (goldAmount > 0)
         {
-            Debug.Log("Gold amount: " + goldAmount);
             yield return new WaitForSeconds(1);
-            goldAmount*= multiplierPerSecond;
+            goldAmount *= multiplierPerSecond;
         }
     }
 

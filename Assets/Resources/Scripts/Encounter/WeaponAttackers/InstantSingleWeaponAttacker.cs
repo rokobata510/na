@@ -1,10 +1,9 @@
 ﻿
 using UnityEngine;
-using UnityEngine.UIElements;
 
 [CreateAssetMenu(fileName = "InstantSingleWeaponAttacker", menuName = "WeaponAttackers/InstantSingleWeaponAttacker")]
 
-public class InstantSingleWeaponAttacker: ASingleWeaponAttacker
+public class InstantSingleWeaponAttacker : ASingleWeaponAttacker
 {
     public override void Attack(GameObject userGameObject, UnnormalizedVector3 targetPosition, float currentTime, int layer)
     {
@@ -13,7 +12,7 @@ public class InstantSingleWeaponAttacker: ASingleWeaponAttacker
         {
             return;
         }
-        ProjectileSpawner.InstantiateProjectile(GetProps(userGameObject.transform.position+ direction * projectileOffset, direction, layer));
+        ProjectileSpawner.InstantiateProjectile(GetProps(userGameObject.transform.position + direction * projectileOffset, direction, layer));
         timeOfLastAttack = currentTime;
         attackKeyWasReleased = false;
     }

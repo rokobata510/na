@@ -5,7 +5,6 @@ public class HealthRenderer : MonoBehaviour
 {
     public void Start()
     {
-
         Inventory.Instance.inventoryEvents.OnHealthChanged.AddListener(UpdateHealthDisplay);
         Inventory.Instance.inventoryEvents.OnHealthChanged.Invoke();
     }

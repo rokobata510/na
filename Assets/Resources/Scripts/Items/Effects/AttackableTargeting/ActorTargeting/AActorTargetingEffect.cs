@@ -2,7 +2,7 @@
 {
     public sealed override void TriggerAttackableTargetingEffect(AAttackable target)
     {
-        if(target is AActor actorTarget)
+        if (target is AActor actorTarget)
         {
             TriggerAActorTargetingEffect(actorTarget);
         }

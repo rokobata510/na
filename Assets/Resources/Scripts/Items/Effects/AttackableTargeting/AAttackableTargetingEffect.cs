@@ -7,7 +7,7 @@ public abstract class AAttackableTargetingEffect : AEffect
     {
         foreach (GameObject target in targets)
         {
-            if(target.TryGetComponent(out AAttackable AttackableTarget))
+            if (target.TryGetComponent(out AAttackable AttackableTarget))
             {
                 TriggerAttackableTargetingEffect(AttackableTarget);
             }

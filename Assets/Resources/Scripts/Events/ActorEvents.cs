@@ -1,6 +1,6 @@
 ﻿using UnityEngine.Events;
 
-public class ActorEvents: AttackableEvents
+public class ActorEvents : AttackableEvents
 {
     public UnityEvent OnWalking = new();
     public UnityEvent OnIdle = new();

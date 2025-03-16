@@ -1,25 +1,41 @@
-﻿using UnityEngine;
+﻿using UnityEngine.InputSystem;
+using UnityEngine;
+using static UnityEngine.InputSystem.DefaultInputActions;
+
 [CreateAssetMenu(fileName = "PlayerMovementStrategy", menuName = "MovementStrategies/PlayerMovementStrategy")]
 public class PlayerMovementStrategy : AMovementStrategy
 {
-    protected new UnnormalizedVector3 nextStepPosition;
     internal bool isRolling;
+
+    public InputActions inputActions;
+
+    public void OnEnable()
+    {
+        inputActions = new InputActions();
+        inputActions.PlayerActions.Enable();
+    }
+    public void OnDisable()
+    {
+        inputActions.PlayerActions.Disable();
+    }
 
     protected override void SetMovementDirection(GameObject origin)
     {
-        if (isRolling)
-            return;
-        nextStepPosition = new UnnormalizedVector3(new((Input.GetKey(KeyCode.D) ? 1 : 0) - (Input.GetKey(KeyCode.A) ? 1 : 0),
-                                                     (Input.GetKey(KeyCode.W) ? 1 : 0) - (Input.GetKey(KeyCode.S) ? 1 : 0), 0));
+        if (!isRolling)
+        {
+            Vector2 movementInput = new Vector2(
+                (inputActions.PlayerActions.MoveRight.IsPressed() ? 1 : 0) + 
+                (inputActions.PlayerActions.MoveLeft.IsPressed() ? -1 : 0),
+                (inputActions.PlayerActions.MoveUp.IsPressed() ? 1 : 0) + 
+                (inputActions.PlayerActions.MoveDown.IsPressed() ? -1 : 0)
+            ).normalized;
+            nextStepPosition = new UnnormalizedVector3(movementInput);
+        }
     }
+
     public override AOverridenVector3 GetNextStep(GameObject origin)
     {
         SetMovementDirection(origin);
         return nextStepPosition;
-
-
     }
-
-
 }
-

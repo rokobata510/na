@@ -1,8 +1,8 @@
-﻿using Codice.Client.BaseCommands;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class Map : MonoBehaviour
@@ -31,20 +31,25 @@ public class Map : MonoBehaviour
     AMapNode lastHoveredNode = null;
     private bool playerHasEnteredCurrentEncounter = true;
     public static List<AMapNode> Nodes { get => nodes; set => nodes = value; }
-    private static Map instance;
-
+    public static bool mapHasBeenGenerated;
+    private InputActions inputActions;
 
     public void OnEnable()
     {
-        if(instance == null)
+
+        inputActions = new InputActions();
+        inputActions.PlayerActions.Enable();
+        if (mapHasBeenGenerated)
         {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
+            if(playerOccupiedNode == null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            playerOccupiedNode.events.OnHover.Invoke();
             return;
         }
+        mapHasBeenGenerated = true;
         DontDestroyOnLoad(gameObject);
         if (MaxColumns % 2 == 0)
         {
@@ -68,16 +73,13 @@ public class Map : MonoBehaviour
         Unhover(hit);
         Hover(hit);
         HandlePlayerMovement(hit);
-        if (Input.GetKeyDown(KeyCode.Space) && !playerHasEnteredCurrentEncounter)
+        if (inputActions.PlayerActions.EnterEncounter.IsPressed() && !playerHasEnteredCurrentEncounter)
         {
             playerHasEnteredCurrentEncounter = true;
             playerOccupiedNode.EnterEncounter();
         }
     }
-    public void OnDestroy()
-    {
-        instance = null;
-    }
+
     private void HandlePlayerMovement(RaycastHit2D hit)
     {
         if
@@ -102,10 +104,15 @@ public class Map : MonoBehaviour
         {
             playerOccupiedNode.events.OnPlayerLeft.Invoke();
         }
-        if(hitNode == null)
+        if (hitNode == null)
         {
             Console.WriteLine("hitNode is null");
         }
+        EnterHitNode(hitNode);
+    }
+
+    public void EnterHitNode(AMapNode hitNode)
+    {
         playerOccupiedNode = hitNode;
         playerOccupiedNode.events.OnPlayerOccupied.Invoke();
         playerHasEnteredCurrentEncounter = false;
@@ -123,14 +130,14 @@ public class Map : MonoBehaviour
 
     private void Unhover(RaycastHit2D hit)
     {
-        if(hit.collider != null)
+        if (hit.collider != null)
         {
-            if(hit.collider.TryGetComponent(out AMapNode hitNode)&&hitNode == playerOccupiedNode)
+            if (hit.collider.TryGetComponent(out AMapNode hitNode) && hitNode == playerOccupiedNode)
             {
                 return;
             }
         }
-        
+
 
         if (lastHoveredNode == null)
         {

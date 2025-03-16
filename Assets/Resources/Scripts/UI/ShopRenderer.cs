@@ -1,8 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+
+public class ShopSlotData : MonoBehaviour
+{
+    public AItem item;
+}
 
 public class ShopRenderer : AGridPanelRenderer
 {
@@ -21,10 +25,12 @@ public class ShopRenderer : AGridPanelRenderer
         closeShopButton = transform.Find("CloseShopButton").gameObject;
     }
 
+    public void Update() { }
 
     protected override void OnPanelHidden()
     {
         ClearSlots();
+        HideDescription();
     }
 
     private void ClearSlots()
@@ -63,12 +69,14 @@ public class ShopRenderer : AGridPanelRenderer
             SetupShopSlot(slot, item);
         }
     }
+
     private AItem GetShopItem()
     {
         AItem itemThatWillBeInTheShop = RemainingItems.Instance.GetItemExceptTheListWithoutRemovingIt(itemsInShop);
         itemsInShop.Add(itemThatWillBeInTheShop);
         return itemThatWillBeInTheShop;
     }
+
     protected override void CreateSlots()
     {
         float startingX = -PanelWidth / 2 + margin + (slotWidth / 2);
@@ -98,18 +106,38 @@ public class ShopRenderer : AGridPanelRenderer
         Image slotImage = slot.GetComponent<Image>();
         Button slotButton = slot.GetComponent<Button>();
 
-        GameObject itemDisplay = new("ShopDisplay");
+        GameObject itemDisplay = new GameObject("ShopDisplay");
         Image itemImage = itemDisplay.AddComponent<Image>();
         itemImage.sprite = item.sprite;
         itemImage.transform.SetParent(slot.transform);
         itemImage.rectTransform.sizeDelta = new Vector2(slotWidth, slotHeight);
         itemImage.rectTransform.localPosition = Vector3.zero;
         slotButton.enabled = true;
+
         GameObject costText = Instantiate(costTextPrefab, slot.transform);
-        costText.transform.position = new Vector3(slot.transform.position.x, slot.transform.position.y - slotHeight / 2 - margin - costTextHeight / 2, 0);
+        costText.transform.position = new Vector3(
+            slot.transform.position.x,
+            slot.transform.position.y - slotHeight / 2 - margin - costTextHeight / 2,
+            0
+        );
         costText.GetComponent<TextMeshProUGUI>().text = item.cost.ToString();
         costText.GetComponent<RectTransform>().sizeDelta = new Vector2(costTextWidth, costTextHeight);
         slotButton.onClick.AddListener(() => BuyItem(item, slot));
+
+        ShopSlotData slotData = slot.AddComponent<ShopSlotData>();
+        slotData.item = item;
+    }
+
+    protected override string GetSlotName(GameObject slot)
+    {
+        var data = slot.GetComponent<ShopSlotData>();
+        return data?.item?.name ?? "";
+    }
+
+    protected override string GetSlotDescription(GameObject slot)
+    {
+        var data = slot.GetComponent<ShopSlotData>();
+        return data?.item?.description ?? "";
     }
 
     public void HideShop()
@@ -126,8 +154,6 @@ public class ShopRenderer : AGridPanelRenderer
             slot.GetComponentInChildren<TextMeshProUGUI>().text = "";
             slot.GetComponent<Button>().enabled = false;
             Destroy(slot.transform.GetChild(0).GetComponent<Image>());
-
         }
     }
 }
-

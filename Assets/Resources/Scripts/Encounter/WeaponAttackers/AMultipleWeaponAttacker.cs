@@ -1,34 +1,36 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public abstract class AMultipleWeaponAttacker : AProjectileWeaponAttacker
-{ 
-
+{
     public List<ASingleWeaponAttacker> weaponAttackers;
-    protected int attackerIndex ;
+    protected List<ASingleWeaponAttacker> weaponAttackersCopy;
+    protected int attackerIndex;
 
-    public override float FireRate { get => weaponAttackers[attackerIndex].FireRate; set => weaponAttackers[attackerIndex].FireRate = value; }
-    public override int Damage { get => weaponAttackers[attackerIndex].Damage; set => weaponAttackers[attackerIndex].Damage = value; }
-    public override AProjectile Projectile { get => weaponAttackers[attackerIndex].Projectile; set => weaponAttackers[attackerIndex].Projectile = value; }
+    public override float FireRate { get => weaponAttackersCopy[attackerIndex].FireRate; set => weaponAttackersCopy[attackerIndex].FireRate = value; }
+    public override int Damage { get => weaponAttackersCopy[attackerIndex].Damage; set => weaponAttackersCopy[attackerIndex].Damage = value; }
+    public override AProjectile Projectile { get => weaponAttackersCopy[attackerIndex].Projectile; set => weaponAttackersCopy[attackerIndex].Projectile = value; }
+
     public override void Attack(GameObject userGameObject, UnnormalizedVector3 targetPosition, float currentTime, int layer)
     {
-        weaponAttackers[attackerIndex].Attack(userGameObject, targetPosition, currentTime, layer);
-        if (weaponAttackers[attackerIndex].timeOfLastAttack == currentTime)
+        weaponAttackersCopy[attackerIndex].Attack(userGameObject, targetPosition, currentTime, layer);
+        if (weaponAttackersCopy[attackerIndex].timeOfLastAttack == currentTime)
         {
             attackerIndex = PickNextAttackerIndex();
-            weaponAttackers.ForEach(weaponAttacker => weaponAttacker.timeOfLastAttack = currentTime);
+            weaponAttackersCopy.ForEach(weaponAttacker => weaponAttacker.timeOfLastAttack = currentTime);
             this.timeOfLastAttack = currentTime;
         }
         else
         {
-            weaponAttackers[attackerIndex].DontAttack(userGameObject);
+            weaponAttackersCopy[attackerIndex].DontAttack(userGameObject);
         }
     }
-    public virtual void Awake()
+
+    public virtual void OnEnable()
     {
-        
+        weaponAttackersCopy = weaponAttackers.Select(weaponAttacker => Instantiate(weaponAttacker)).ToList();
     }
+
     protected abstract int PickNextAttackerIndex();
 }
-

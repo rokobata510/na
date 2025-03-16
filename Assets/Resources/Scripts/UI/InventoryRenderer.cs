@@ -1,4 +1,3 @@
-using UnityEditor.Graphs;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,7 +7,6 @@ public class InventoryRenderer : AGridPanelRenderer
     public Color selectedItemColor;
     public override int PanelWidth => margin + Columns * (slotWidth + margin);
     public override int PanelHeight => margin + Rows * (slotHeight + margin);
-
 
     protected override void Awake()
     {
@@ -69,6 +67,9 @@ public class InventoryRenderer : AGridPanelRenderer
         slotButton.enabled = true;
         slotButton.onClick.AddListener(() => ToggleItemEquip(item, slot));
         UpdateSlotColor(item, slot);
+
+        InventorySlotData slotData = slot.AddComponent<InventorySlotData>();
+        slotData.item = item;
     }
 
     private void ToggleItemEquip(AItem item, GameObject slot)
@@ -105,4 +106,21 @@ public class InventoryRenderer : AGridPanelRenderer
             }
         }
     }
+
+    protected override string GetSlotName(GameObject slot)
+    {
+        var data = slot.GetComponent<InventorySlotData>();
+        return data?.item?.name ?? "";
+    }
+
+    protected override string GetSlotDescription(GameObject slot)
+    {
+        var data = slot.GetComponent<InventorySlotData>();
+        return data?.item?.description ?? "";
+    }
+}
+
+public class InventorySlotData : MonoBehaviour
+{
+    public AItem item;
 }

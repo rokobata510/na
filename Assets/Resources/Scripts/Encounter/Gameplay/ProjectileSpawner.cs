@@ -1,7 +1,4 @@
-﻿
-using System;
-using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 [CreateAssetMenu(fileName = "ProjectileSpawner", menuName = "Encounter/Gameplay/ProjectileSpawner")]
 public class ProjectileSpawner : ScriptableObject
 {

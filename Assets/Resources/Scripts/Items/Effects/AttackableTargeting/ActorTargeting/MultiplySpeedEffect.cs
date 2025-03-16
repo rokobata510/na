@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-[CreateAssetMenu(fileName = "MultiplySpeedEffect", menuName = "Items/Effects/ActorTargeting/MultiplySpeedEffect")] 
+﻿using UnityEngine;
+[CreateAssetMenu(fileName = "MultiplySpeedEffect", menuName = "Items/Effects/ActorTargeting/MultiplySpeedEffect")]
 public class MultiplySpeedEffect : AActorTargetingEffect
 {
     public float speedMultiplier;

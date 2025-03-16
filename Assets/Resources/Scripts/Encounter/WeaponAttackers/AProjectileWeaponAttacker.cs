@@ -1,8 +1,4 @@
-﻿using log4net.Util;
-using System;
-using System.Collections;
-using UnityEngine;
-using UnityEngine.Assertions;
+﻿using UnityEngine;
 
 public abstract class AProjectileWeaponAttacker : AWeaponAttacker
 {

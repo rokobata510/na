@@ -1,7 +1,4 @@
-﻿
-using UnityEngine;
-
-public abstract class ASingleWeaponAttacker : AProjectileWeaponAttacker
+﻿public abstract class ASingleWeaponAttacker : AProjectileWeaponAttacker
 {
     public int damage;
     public float fireRate;

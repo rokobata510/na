@@ -43,10 +43,10 @@ public class Node
     }
 
     public bool IsWalkableForGameObject(GameObject gameObject)
-    { 
+    {
         bool isWalkable = collidesWith.All(collision => Physics2D.GetIgnoreLayerCollision(gameObject.layer, collision.layer) || collision == gameObject || collision.layer == LayerMask.NameToLayer("Player"));
-        if(isWalkable)
-            Debug.DrawRay(new Vector2(X-raycastBoxDiagonal/2, Y-raycastBoxDiagonal/2), new Vector2(raycastBoxSides, raycastBoxSides), Color.green);
+        if (isWalkable)
+            Debug.DrawRay(new Vector2(X - raycastBoxDiagonal / 2, Y - raycastBoxDiagonal / 2), new Vector2(raycastBoxSides, raycastBoxSides), Color.green);
         else
             Debug.DrawRay(new Vector2(X - raycastBoxDiagonal / 2, Y - raycastBoxDiagonal / 2), new Vector2(raycastBoxSides, raycastBoxSides), Color.red);
         return isWalkable;

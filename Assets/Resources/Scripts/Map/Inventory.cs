@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Inventory", menuName = "Items/Inventory")]
@@ -8,8 +9,10 @@ public sealed class Inventory : ScriptableObject
     [SerializeField] private int gold;
     [SerializeField] private int health;
     [SerializeField] private int maxHealth;
+    [SerializeField] private int defaultMaxHealth;
     [SerializeField] private List<AWeapon> weapons;
     [SerializeField] private AWeapon equippedWeapon;
+    [SerializeField] private AWeapon defaultWeapon;
     [SerializeField] private List<AItem> items;
     [SerializeField] private List<AItem> equippedItems;
     public InventoryEvents inventoryEvents = new();
@@ -120,5 +123,16 @@ public sealed class Inventory : ScriptableObject
         weapons ??= new List<AWeapon>();
         items ??= new List<AItem>();
         equippedItems ??= new List<AItem>();
+    }
+
+    public static void Reset()
+    {
+        instance.Health = instance.defaultMaxHealth;
+        instance.MaxHealth = instance.defaultMaxHealth;
+        instance.Gold = 0;
+        instance.Weapons = new List<AWeapon> { instance.defaultWeapon };
+        instance.EquippedWeapon = instance.defaultWeapon;
+        instance.Items = new List<AItem>();
+        instance.EquippedItems = new List<AItem>();
     }
 }

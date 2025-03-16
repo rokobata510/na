@@ -39,7 +39,7 @@ public class ChargedSingleWeaponAttacker : ASingleWeaponAttacker
             currentlyActiveChargingProjectile.transform.position = userGameObject.transform.position + direction * projectileOffset;
 
 
-            float angle = Mathf.Atan2(direction.Y, direction.X) * Mathf.Rad2Deg -90f;
+            float angle = Mathf.Atan2(direction.Y, direction.X) * Mathf.Rad2Deg - 90f;
             currentlyActiveChargingProjectile.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
     }

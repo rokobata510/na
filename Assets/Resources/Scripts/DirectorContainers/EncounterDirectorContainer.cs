@@ -1,15 +1,11 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EncounterDirectorContainer : ADirectorContainer
 {
-    AMapNode node;
-    public AMapNode Node { get => node; private set => node = value; }
+    public AMapNode Node;
 
-    Encounter encounter;
-    public Encounter Encounter { get => encounter; private set => encounter = value; }
+    public Encounter Encounter;
 
     public override void Start()
     {
@@ -28,7 +24,14 @@ public class EncounterDirectorContainer : ADirectorContainer
 
     private void SetNodeAndEncounter()
     {
-        Node = GameObject.Find("Map").GetComponent<Map>().playerOccupiedNode;
+        GameObject mapObject = GameObject.Find("Map");
+        if (mapObject == null)
+        {
+            Debug.Log("Map GameObject not found in the scene.");
+            return;
+        }
+        Node = mapObject.GetComponent<Map>().playerOccupiedNode;
+
         Encounter = Node.Encounters[EncounterRandomStream.Range(0, Node.Encounters.Count)];
     }
 }

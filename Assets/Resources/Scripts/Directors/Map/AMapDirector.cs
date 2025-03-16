@@ -1,4 +1,4 @@
-﻿public abstract class AMapDirector: ADirector
+﻿public abstract class AMapDirector : ADirector
 {
     public override void SetupFields(ADirectorContainer directorContainer)
     {

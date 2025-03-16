@@ -1,10 +1,9 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class DamageZone : MonoBehaviourWithYLevelHandler, IDealsDamage
 {
-    [SerializeField] protected int damage;  
-    public int Damage { get => damage; set =>damage = value;}
+    [SerializeField] protected int damage;
+    public int Damage { get => damage; set => damage = value; }
 
     public float Knockback => 0;
 

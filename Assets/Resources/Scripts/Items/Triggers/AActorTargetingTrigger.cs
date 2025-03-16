@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public abstract class AActorTargetingTrigger: ATrigger
+public abstract class AActorTargetingTrigger : ATrigger
 {
     public sealed override void RegisterTrigger(UnityAction<object> effect, ItemEffectDirector director, object subject)
     {

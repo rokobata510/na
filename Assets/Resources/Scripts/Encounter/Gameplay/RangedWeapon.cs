@@ -1,7 +1,4 @@
-﻿using System;
-using UnityEngine;
-
-public  class RangedWeapon : AProjectileWeapon
+﻿public class RangedWeapon : AProjectileWeapon
 {
 
     public new RangedWeaponRenderer WeaponRenderer { get => (RangedWeaponRenderer)weaponRendererClone; set => weaponRendererClone = value; }

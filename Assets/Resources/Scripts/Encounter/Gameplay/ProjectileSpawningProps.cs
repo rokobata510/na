@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-
-
-public class ProjectileSpawningProps
+﻿public class ProjectileSpawningProps
 {
     public AProjectile projectile;
     public UnnormalizedVector3 position;
@@ -26,7 +23,7 @@ public class ProjectileSpawningProps
         this.layer = layer;
     }
 
-    public ProjectileSpawningProps(AProjectile projectile ,UnnormalizedVector3 position, NormalizedVector3 direction, int damage, float knockback, float speed, float lifetime, string tag, int layer)
+    public ProjectileSpawningProps(AProjectile projectile, UnnormalizedVector3 position, NormalizedVector3 direction, int damage, float knockback, float speed, float lifetime, string tag, int layer)
     {
         this.projectile = projectile;
         this.position = position;

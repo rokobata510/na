@@ -1,8 +1,5 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Tilemaps;
 [RequireComponent(typeof(Collider2D))]
 public abstract class AMapNode : MonoBehaviour
 {
@@ -31,7 +28,7 @@ public abstract class AMapNode : MonoBehaviour
         events.OnPlayerLeft.AddListener(OnPlayerLeft);
     }
     public abstract void EnterEncounter();
-    
+
     public void OnHover()
     {
         if (!hoverHasTriggered)

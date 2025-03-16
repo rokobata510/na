@@ -1,6 +1,4 @@
-﻿
-using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
 [CreateAssetMenu(fileName = "OnEnemyDeathTrigger", menuName = "Items/Triggers/OnEnemyDeathTrigger")]
 public class OnEnemyDeathTrigger : AEnemyTargetingTrigger

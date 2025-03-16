@@ -9,6 +9,7 @@ public class EndChestRewardRenderer : AGridPanelRenderer
 
     public override int PanelWidth => margin + Columns * (slotWidth + margin);
     public override int PanelHeight => margin + Rows * (slotHeight + margin);
+
     public void SetChestData(float gold)
     {
         chestGold = gold;
@@ -61,6 +62,9 @@ public class EndChestRewardRenderer : AGridPanelRenderer
         slotButton.enabled = true;
         slotButton.onClick.RemoveAllListeners();
         slotButton.onClick.AddListener(() => OnRewardSelected(item));
+
+        EndChestSlotData slotData = slot.AddComponent<EndChestSlotData>();
+        slotData.item = item;
     }
 
     private void OnRewardSelected(AItem selectedItem)
@@ -104,4 +108,21 @@ public class EndChestRewardRenderer : AGridPanelRenderer
             slot.GetComponent<Button>().enabled = false;
         }
     }
+
+    protected override string GetSlotName(GameObject slot)
+    {
+        var data = slot.GetComponent<EndChestSlotData>();
+        return data?.item?.name ?? "";
+    }
+
+    protected override string GetSlotDescription(GameObject slot)
+    {
+        var data = slot.GetComponent<EndChestSlotData>();
+        return data?.item?.description ?? "";
+    }
+}
+
+public class EndChestSlotData : MonoBehaviour
+{
+    public AItem item;
 }

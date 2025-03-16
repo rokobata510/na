@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 
-internal class ShopNode : AMapNode
+public class ShopNode : AMapNode
 {
     public override void EnterEncounter()
     {

@@ -1,8 +1,6 @@
-﻿using TMPro;
-using UnityEngine;
-using System.Collections.Generic;
-using System;
+﻿using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 [CreateAssetMenu(fileName = "RunTowardsPlayerMovementStrategy", menuName = "MovementStrategies/RunTowardsPlayerMovementStrategy")]
 public class RunTowardsPlayerMovementStrategy : AEnemyMovementStrategy
 {
@@ -14,6 +12,7 @@ public class RunTowardsPlayerMovementStrategy : AEnemyMovementStrategy
         {
             targetGameObject = new GameObject("LastSeenPosition");
             targetGameObject.layer = playerGameObject.layer;
+            targetGameObject.tag = playerGameObject.tag;
             targetGameObject.transform.parent = origin.transform;
         }
         targetGameObject.transform.position = playerGameObject.transform.position;

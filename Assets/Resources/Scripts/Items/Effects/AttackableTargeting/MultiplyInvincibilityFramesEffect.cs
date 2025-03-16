@@ -8,7 +8,7 @@ public class MultiplyInvincibilityFramesEffect : AEffect
     {
         foreach (GameObject target in targets)
         {
-            if(target.TryGetComponent(out AAttackable attackableTarget))
+            if (target.TryGetComponent(out AAttackable attackableTarget))
             {
                 attackableTarget.invincibilityTime *= invincibilityFrameMultiplier;
             }

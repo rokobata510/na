@@ -1,11 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawnDirector : AHasReferenceToEncounterDirector
 {
     private int availablePointsCopy;
     public List<SpawnPoint> spawnPoints;
+    public override void SetupFields(EncounterDirectorContainer directorContainer)
+    {
+        base.SetupFields(directorContainer);
+        availablePointsCopy = encounter.spawnPoints;
+    }
     public override void StartDirector()
     {
         FindSpawnPoints();
@@ -16,11 +20,7 @@ public class EnemySpawnDirector : AHasReferenceToEncounterDirector
     public override void UpdateDirector()
     {
     }
-    public override void SetupFields(EncounterDirectorContainer directorContainer)
-    {
-        base.SetupFields(directorContainer);
-        availablePointsCopy = encounter.spawnPoints;
-    }
+    
     void FindSpawnPoints()
     {
         this.spawnPoints = new List<SpawnPoint>();
@@ -39,8 +39,8 @@ public class EnemySpawnDirector : AHasReferenceToEncounterDirector
     }
 
 
-    
-    
+
+
     private void AssignPoints()
     {
         int circuitBreaker = 1000;
@@ -57,7 +57,7 @@ public class EnemySpawnDirector : AHasReferenceToEncounterDirector
                 //int points = EncounterRandomStream.Range(minimumPointsAssignedPerRound, maximumPointsAssignedPerRound+1);
                 availablePointsCopy -= points;
                 spawnPoint.availablePoints += points;
-            }
+           }
         }
         if (circuitBreaker <= 0)
         {
@@ -74,5 +74,5 @@ public class EnemySpawnDirector : AHasReferenceToEncounterDirector
         spawnPoints = new();
     }
 
-    
+
 }

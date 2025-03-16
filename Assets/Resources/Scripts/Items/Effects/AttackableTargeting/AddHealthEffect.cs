@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 [CreateAssetMenu(fileName = "AddHealthEffect", menuName = "Items/Effects/AttackableTargeting/AddHealthEffect")]
 public class AddHealthEffect : AAttackableTargetingEffect
 {

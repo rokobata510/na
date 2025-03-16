@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class MysteryNode: AMapNode
+public class MysteryNode : AMapNode
 {
     public override void EnterEncounter()
     {

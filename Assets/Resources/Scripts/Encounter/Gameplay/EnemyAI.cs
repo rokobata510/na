@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 public class EnemyAI : AActor
@@ -31,7 +30,7 @@ public class EnemyAI : AActor
         base.Awake();
         events.OnIdle.AddListener(() => animator.SetBool("isWalking", false));
         events.OnDamaged.AddListener((GameObject attackergameObject, IDealsDamage attackerProps) => StartCoroutine(GetKnockedBack(attackergameObject, attackerProps)));
-        events.OnWeaponChange.Invoke();
+        events.OnDeath.AddListener(() => Die());
         MovementStrategyInstance = movementStrategy.Clone();
         attackStrategyInstance = attackStrategy.Clone();
     }
@@ -65,9 +64,10 @@ public class EnemyAI : AActor
             }
             AttackLogic();
         }
+        weaponScript.Point((UnnormalizedVector3)transform.position, attackStrategyInstance.targetDirection);
         if (health <= 0)
         {
-            Die();
+            events.OnDeath.Invoke();
         }
         bool ExpectedToBeOnTarget() => TimeSinceLastTargetingCallInSeconds >= TimeToMoveToNextStepInSeconds;
 
@@ -90,15 +90,11 @@ public class EnemyAI : AActor
         }
 
     }
-    /*
-protected override void AttackLogic()
-{
-   if (SightChecker.CanSeeTarget(transform.position, target, 20))
-   {
-       base.AttackLogic();
-   }
-}
-*/
 
 
+    public override void Die()
+    {
+        Destroy(weaponScript.gameObject);
+        Destroy(gameObject);
+    }
 }

@@ -4,7 +4,7 @@
 public class ColliderWeaponAttacker : AWeaponAttacker, IDealsDamage
 {
     public int damage;
-    public override int Damage { get => damage; set=>damage = value; }
+    public override int Damage { get => damage; set => damage = value; }
 
     public float Knockback => knockback;
 

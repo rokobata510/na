@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public abstract class AEnemyAttackStrategy : AAttackStrategy
+﻿public abstract class AEnemyAttackStrategy : AAttackStrategy
 {
 }
 

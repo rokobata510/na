@@ -1,5 +1,4 @@
 using System.Collections;
-using TMPro;
 using UnityEngine;
 
 public sealed class PlayerScript : AActor
@@ -13,6 +12,7 @@ public sealed class PlayerScript : AActor
     public float rollCooldown = 2f;
     private float timeOfLastRoll = 0;
     public GameObject deathScreen;
+    private InputActions inputActions;
 
 
     [SerializeField] PlayerEvents events = new();
@@ -22,31 +22,42 @@ public sealed class PlayerScript : AActor
     {
         base.Awake();
         health = Inventory.Instance.Health;
+        ((PlayerMovementStrategy)MovementStrategyInstance).OnEnable();
+        ((PlayerAttackStrategy)attackStrategyInstance).OnEnable();
+        inputActions = new InputActions();
+        inputActions.PlayerActions.Enable();
+
         events.OnDamaged.AddListener((GameObject attackergameObject, IDealsDamage attackerProps) => Inventory.Instance.Health = health);
         events.OnWalking.AddListener(() => animator.SetBool("isWalking", true));
         events.OnRolling.AddListener(() => animator.SetBool("isRolling", true));
         events.OnIdle.AddListener(() => animator.SetBool("isWalking", false));
         events.OnNotRolling.AddListener(() => animator.SetBool("isRolling", false));
-        events.OnDeath.AddListener(() => deathScreen.SetActive(true));
+        events.OnDeath.AddListener(() => Die());
 
     }
 
     public void FixedUpdate()
     {
+        if (health <= 0)
+        {
+            events.OnDeath.Invoke();
+            return;
+        }
         GetNextStepTarget();
         MoveToTarget();
         FlipSpriteIfNeeded();
         RollIfNeeded();
+
+
 
         if (Input.GetKeyDown(KeyCode.E))
         {
             Interact();
 
         }
-        if (health <= 0)
-        {
-            Die();
-        }
+        attackStrategyInstance.SetTarget(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        AttackLogic();
+        weaponScript.Point((UnnormalizedVector3)transform.position, attackStrategyInstance.targetDirection);
         void RollIfNeeded()
         {
             if (!movementStrategyInstance.isRolling && IsWalking && Input.GetMouseButton(1) && NextRollAvailable())
@@ -57,14 +68,11 @@ public sealed class PlayerScript : AActor
 
 
     }
-    public new void Update()
+
+    public void OnDisable()
     {
-        base.Update();
-        attackStrategyInstance.SetTarget(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-        AttackLogic();
+        Debug.Log("OnDisable");
     }
-
-
     private void Interact()
     {
 
@@ -110,10 +118,11 @@ public sealed class PlayerScript : AActor
     {
         return Time.time > timeOfLastRoll + rollCooldown;
     }
-
-
     public override void Die()
     {
-        events.OnDeath.Invoke();
+        deathScreen.SetActive(true);
+        Inventory.Reset();
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        gameObject.GetComponent<Rigidbody2D>().simulated = false;
     }
 }

@@ -15,7 +15,7 @@ public abstract class AAttackable : MonoBehaviourWithYLevelHandler
     public abstract AttackableEvents Events { get; set; }
 
 
-    public void GetAttacked(GameObject attacker, IDealsDamage attackerProps) 
+    public void GetAttacked(GameObject attacker, IDealsDamage attackerProps)
     {
         if (invincible)
         {

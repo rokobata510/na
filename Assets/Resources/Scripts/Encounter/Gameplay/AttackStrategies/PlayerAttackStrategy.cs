@@ -4,6 +4,13 @@
 
 public class PlayerAttackStrategy : AAttackStrategy
 {
-    public override bool WantsToAttack(UnnormalizedVector3 origin) => Input.GetMouseButton(0) && !PauseMenuManager.isPaused;
+    InputActions inputActions;
+    public void OnEnable()
+    {
+        inputActions = new InputActions();
+        inputActions.PlayerActions.Enable();
+        Debug.Log("Player Attack strategy is now enabled");
+    }
+    public override bool WantsToAttack(UnnormalizedVector3 origin) => inputActions.PlayerActions.Attack.IsPressed() && !PauseMenuManager.isPaused;
 }
 

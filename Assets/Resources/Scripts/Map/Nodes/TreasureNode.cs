@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class TreasureNode: AMapNode
+public class TreasureNode : AMapNode
 {
     public override void EnterEncounter()
     {

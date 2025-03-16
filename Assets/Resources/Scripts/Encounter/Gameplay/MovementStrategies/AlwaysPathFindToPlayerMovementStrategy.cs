@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 [CreateAssetMenu(fileName = "AlwaysPathFindToPlayerMovementStrategy", menuName = "MovementStrategies/AlwaysPathFindToPlayerMovementStrategy")]
 
 public class AlwaysPathFindToPlayerMovementStrategy : RunTowardsPlayerMovementStrategy

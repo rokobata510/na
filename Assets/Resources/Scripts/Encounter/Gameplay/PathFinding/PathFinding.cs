@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 
 public static class PathFinding
@@ -18,7 +17,7 @@ public static class PathFinding
     {
         Node targetNode = new(target.transform.position.x, target.transform.position.y, 0, 0, null);
         Node startNode = new(origin.transform.position.x, origin.transform.position.y, 0, 0, null);
-        
+
         if (!targetNode.IsWalkableForGameObject(origin) || startNode == targetNode)
         {
             return new List<UnnormalizedVector3> { new() };
@@ -95,7 +94,7 @@ public static class PathFinding
 
         return new List<UnnormalizedVector3> { new() };
     }
-    
+
     private static List<UnnormalizedVector3> RetracePath(Node startNode, Node endNode)
     {
         List<UnnormalizedVector3> path = new();

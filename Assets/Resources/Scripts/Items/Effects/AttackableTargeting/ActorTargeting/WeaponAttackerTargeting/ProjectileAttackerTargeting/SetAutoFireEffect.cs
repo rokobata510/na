@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [CreateAssetMenu(menuName = "Items/Effects/ProjectileAttackerTargeting/SetAutoFireEffect")]
-public class SetAutoFireEffect: AProjectileAttackerTargetingEffect
+public class SetAutoFireEffect : AProjectileAttackerTargetingEffect
 {
     public bool autoFire;
 

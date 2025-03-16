@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "MultiAirstrikeAttacker", menuName = "WeaponAttackers/MultiAirstrikeAttacker")]
@@ -29,13 +28,13 @@ public class MultiAirstrikeAttacker : ASingleWeaponAttacker
         for (int numberOfCurrentAttack = 0; numberOfCurrentAttack < countOfAttacks; numberOfCurrentAttack++)
         {
             UnnormalizedVector3 targetOfCurrentAttack = startingPoint + stepPerAttackFired * numberOfCurrentAttack;
-            chargingProjectileInstances[numberOfCurrentAttack]  = ProjectileSpawner.InstantiateProjectile(GetAirstrikeChargingProps(targetOfCurrentAttack));
+            chargingProjectileInstances[numberOfCurrentAttack] = ProjectileSpawner.InstantiateProjectile(GetAirstrikeChargingProps(targetOfCurrentAttack));
         }
         for (int numberOfCurrentAttack = 0; numberOfCurrentAttack < countOfAttacks; numberOfCurrentAttack++)
         {
             ExplodeChargingProjectile(chargingProjectileInstances[numberOfCurrentAttack], layer);
             await Task.Delay(MilliSecondsBetweenExplosions);
-            if(!Application.isPlaying)
+            if (!Application.isPlaying)
             {
                 break;
             }

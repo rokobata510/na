@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public abstract class ATakesUpScreen: MonoBehaviour
+public abstract class ATakesUpScreen : MonoBehaviour
 {
     public static ATakesUpScreen activeGameObject;
 

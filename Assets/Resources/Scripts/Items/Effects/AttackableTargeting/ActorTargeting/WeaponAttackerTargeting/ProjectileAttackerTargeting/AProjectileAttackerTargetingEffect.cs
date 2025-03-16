@@ -2,7 +2,7 @@
 {
     public sealed override void TriggerWeaponAttackerTargetingEffect(AWeaponAttacker target)
     {
-        if(target is AProjectileWeaponAttacker attacker)
+        if (target is AProjectileWeaponAttacker attacker)
         {
             TriggerProjectileAttackerTargetingEffect(attacker);
         }
