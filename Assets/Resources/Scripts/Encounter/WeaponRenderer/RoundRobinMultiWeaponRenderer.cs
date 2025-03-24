@@ -21,21 +21,6 @@ public class RoundRobinMultiWeaponRenderer : AWeaponRenderer
         }
     }
 
-    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-    private static void CheckListLengths()
-    {
-        RoundRobinMultiWeaponRenderer[] renderers = GameObject.FindObjectsOfType<RoundRobinMultiWeaponRenderer>();
-
-        foreach (var renderer in renderers)
-        {
-            if (renderer.weaponRenderers.Count != renderer.sprites.Count)
-            {
-                Debug.LogError($"RoundRobinMultiWeaponRenderer: The length of weaponRenderers ({renderer.weaponRenderers.Count}) does not match the length of sprites ({renderer.sprites.Count}).");
-                throw new System.Exception("RoundRobinMultiWeaponRenderer: The length of weaponRenderers does not match the length of sprites.");
-            }
-        }
-    }
-
     public override UnnormalizedVector3 CalculateGoalPosition(UnnormalizedVector3 ownerPosition, Transform weaponTransform, NormalizedVector3 pointingDirection)
     {
         return weaponRenderers[currentIndex].CalculateGoalPosition(ownerPosition, weaponTransform, pointingDirection);

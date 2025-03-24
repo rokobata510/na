@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43174d77590f21145b58f28f33ef175c, type: 3}
+  m_Name: TankMultiAirstrike
+  m_EditorClassIdentifier: 
+  knockback: 1
+  timeOfLastAttack: 0
+  projectileSpeed: 1
+  projectileLifetime: 1
+  projectileOffset: 1
+  attackKeyWasReleased: 1
+  autoFire: 0
+  damage: 1
+  fireRate: 2
+  projectile: {fileID: 2989201445108161935, guid: 317ee0ed49c65f84aaa7ea764efc9961, type: 3}
+  lineLength: 20
+  countOfAttacks: 5
+  secondsBetweenExplosions: 0.5
+  chargingProjectile: {fileID: -7383741131521028072, guid: ca90de7dd6287fe4ea4ba58d578cf948, type: 3}

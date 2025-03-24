@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b429ac7a0ce8e9945baaa759e3e0d3f5, type: 3}
+  m_Name: TankRenderer
+  m_EditorClassIdentifier: 
+  distanceFromUser: 0
+  forwardsOffset: 0
+  rotationOffset: 0
+  LerpSpeed: 10
+  weaponRenderers:
+  - {fileID: 11400000, guid: 57353af64f816e54e816e08297c17373, type: 2}
+  - {fileID: 11400000, guid: 2c7694d624e7d904c8a58559708d3989, type: 2}
+  - {fileID: 11400000, guid: 57353af64f816e54e816e08297c17373, type: 2}
+  sprites:
+  - {fileID: 4651235764295018554, guid: 4b69047baf7234a42a8f68baa8225d66, type: 3}
+  - {fileID: 2471905014566740960, guid: c2c2a5598e11a1c45b9210d19101b880, type: 3}
+  - {fileID: -8360712721338985256, guid: 2b35a21e1660968458360b28f583001a, type: 3}

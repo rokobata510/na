@@ -1,9 +1,12 @@
-﻿public class BossAI : EnemyAI
+﻿using UnityEngine;
 
-
+public class BossAI : EnemyAI
 {
-    protected override void AttackLogic()
+    public GameObject superDuperEndChest;
+    public void OnEnable()
     {
-        base.AttackLogic();
+        superDuperEndChest = FindFirstObjectByType<SuperDuperEndChest>(FindObjectsInactive.Include).gameObject;
+        // when the boss dies, it should enable the super duper end chest
+        Events.OnDeath.AddListener(() => superDuperEndChest.SetActive(true));
     }
 }

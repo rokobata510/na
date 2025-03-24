@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f829c8398efffb4dadf722df216505f, type: 3}
+  m_Name: IncubusWithNoBrim
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemDescription: 
+  sprite: {fileID: 21300000, guid: 564a8042bd20ba84ca7c152d0552481e, type: 3}
+  effect: {fileID: 11400000, guid: e03d2a6499dede149a08bb2e41d3d715, type: 2}
+  targeting: {fileID: 11400000, guid: ac7dbdd8e3c5c3f4eb895bd2b0b51489, type: 2}
+  trigger: {fileID: 11400000, guid: 4e4b74a2247307a41aa90edfd1a87566, type: 2}

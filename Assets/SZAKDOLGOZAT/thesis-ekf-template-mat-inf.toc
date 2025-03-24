@@ -1,0 +1,26 @@
+\select@language {magyar} \contentsline {chapter}{Bevezetés}{4}{chapter*.2}%
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Technológiai Bevezetés}{5}{chapter.1}%
+\select@language {magyar} \contentsline {section}{\numberline {1.1}Godot bemutatása}{5}{section.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.1.1}Főbb jellemzők}{5}{subsection.1.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.1.2}Unity keretrendszerhez képest}{6}{subsection.1.1.2}%
+\select@language {magyar} \contentsline {section}{\numberline {1.2}Unreal bemutatása}{6}{section.1.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.1}Főbb jellemzők}{6}{subsection.1.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.2.2}Unity keretrendszerhez képest}{6}{subsection.1.2.2}%
+\select@language {magyar} \contentsline {section}{\numberline {1.3}Unity bemutatása}{6}{section.1.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.3.1}Főbb jellemzők}{6}{subsection.1.3.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.3.2}Miért a Unity-t választottam}{6}{subsection.1.3.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {1.3.3}Használt Unity komponensek bemutatása}{6}{subsection.1.3.3}%
+\select@language {magyar} \contentsline {chapter}{\numberline {2}Rendszerterv}{7}{chapter.2}%
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Saját projekt fejlesztése}{8}{chapter.3}%
+\select@language {magyar} \contentsline {chapter}{\numberline {4}Tesztelés}{9}{chapter.4}%
+\select@language {magyar} \contentsline {chapter}{\numberline {5}Összegzés}{10}{chapter.5}%
+\select@language {magyar} \contentsline {section}{\numberline {5.1}Az eredeti tervből mi valósult meg}{10}{section.5.1}%
+\select@language {magyar} \contentsline {section}{\numberline {5.2}Jövő béli fejlesztési lehetőségek}{10}{section.5.2}%
+\select@language {magyar} \contentsline {section}{\numberline {5.3}Mit csinálnék máshogy?}{10}{section.5.3}%
+\select@language {magyar} \contentsline {chapter}{\numberline {6}Ábrák jegyzéke}{11}{chapter.6}%
+\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{12}{chapter*.3}%
+\select@language {magyar} \contentsline {chapter}{\numberline {7}Fejezet címe}{13}{chapter.7}%
+\select@language {magyar} \contentsline {section}{\numberline {7.1}Szakasz címe}{13}{section.7.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {7.1.1}Alszakasz címe}{13}{subsection.7.1.1}%
+\select@language {magyar} \contentsline {chapter}{Összegzés}{14}{chapter*.4}%
+\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{15}{chapter*.5}%

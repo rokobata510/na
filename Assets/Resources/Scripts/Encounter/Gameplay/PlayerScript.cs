@@ -28,7 +28,8 @@ public sealed class PlayerScript : AActor
         inputActions.PlayerActions.Enable();
 
         events.OnDamaged.AddListener((GameObject attackergameObject, IDealsDamage attackerProps) => Inventory.Instance.Health = health);
-        events.OnWalking.AddListener(() => animator.SetBool("isWalking", true));
+        ((ActorEvents)Events).OnIdle.AddListener(() => animator.SetBool("isWalking", false));
+        ((ActorEvents)Events).OnWalking.AddListener(() => animator.SetBool("isWalking", true));
         events.OnRolling.AddListener(() => animator.SetBool("isRolling", true));
         events.OnIdle.AddListener(() => animator.SetBool("isWalking", false));
         events.OnNotRolling.AddListener(() => animator.SetBool("isRolling", false));

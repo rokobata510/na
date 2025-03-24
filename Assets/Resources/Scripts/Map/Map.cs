@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Map : MonoBehaviour
 {
+    public float sizeMultiplier = 1.0f;
     public bool generateAll;
     public int MaxRows = 100;
     private int BossRow => MaxRows + 1;
@@ -36,12 +37,11 @@ public class Map : MonoBehaviour
 
     public void OnEnable()
     {
-
         inputActions = new InputActions();
         inputActions.PlayerActions.Enable();
         if (mapHasBeenGenerated)
         {
-            if(playerOccupiedNode == null)
+            if (playerOccupiedNode == null)
             {
                 Destroy(gameObject);
                 return;
@@ -138,7 +138,6 @@ public class Map : MonoBehaviour
             }
         }
 
-
         if (lastHoveredNode == null)
         {
             return;
@@ -155,7 +154,6 @@ public class Map : MonoBehaviour
         }
         lastHoveredNode.events.OnUnhover.Invoke();
         lastHoveredNode = null;
-
     }
 
     private void DiscardOrphanNodes()
@@ -220,7 +218,6 @@ public class Map : MonoBehaviour
         }
     }
 
-
     private static List<AMapNode> GetNodesWithNoRouteLeadingToThem()
     {
         List<AMapNode> NodesWithARouteLeadingToThem = new();
@@ -235,12 +232,10 @@ public class Map : MonoBehaviour
             }
             foreach (AMapNode routeTarget in node.RoutesFromHere)
             {
-
                 if (!NodesWithARouteLeadingToThem.Contains(routeTarget))
                 {
                     NodesWithARouteLeadingToThem.Add(routeTarget);
                 }
-
             }
         }
         return Nodes.Except(NodesWithARouteLeadingToThem).ToList();
@@ -256,13 +251,14 @@ public class Map : MonoBehaviour
 
     private void GenerateBossNode()
     {
-        AMapNode bossNode = Instantiate(bossNodePrefab, new UnnormalizedVector3(MiddleColumn, MaxRows + 1, 0), Quaternion.identity).GetComponent<AMapNode>();
+        AMapNode bossNode = Instantiate(bossNodePrefab, new Vector3(MiddleColumn * sizeMultiplier, BossRow * sizeMultiplier, 0), Quaternion.identity).GetComponent<AMapNode>();
         bossNode.row = MaxRows + 1;
         bossNode.column = MiddleColumn;
         bossNode.seed = WorldRandomStream.Range(0, int.MaxValue);
         bossNode.gameObject.transform.SetParent(transform);
         nodes.Add(bossNode);
     }
+
     private void GenerateRow(int currentRow)
     {
         for (int currentColumn = 0; currentColumn < MaxColumns; currentColumn++)
@@ -303,6 +299,7 @@ public class Map : MonoBehaviour
         }
         AddBossNodeToRoutesFromThisNode(currentNode);
     }
+
     private bool TryConnect(AMapNode currentNode, AMapNode targetNode)
     {
         if (LastRowIsBoss(currentNode.row))
@@ -324,6 +321,7 @@ public class Map : MonoBehaviour
             return AddNonBossNodeToRoutesFromThisNode(currentNode, targetNode);
         }
     }
+
     private bool AddNonBossNodeToRoutesFromThisNode(AMapNode currentNode, AMapNode targetNode)
     {
         if (LastRowNodeExists(targetNode) && RouteAvoidsIntersections(currentNode, targetNode))
@@ -346,9 +344,9 @@ public class Map : MonoBehaviour
             return nodeAbove == null || nextNode == null || !nextNode.RoutesFromHere.Contains(nodeAbove);
         }
     }
+
     private void AddToRoutes(AMapNode currentNode, AMapNode targetNode)
     {
-        //TODO: ne kelljen itt ellenőrizni, hogy már benne van-e (csak a boss négyszeres csatlakozás miatt kell)
         if (currentNode.RoutesFromHere.Contains(targetNode))
         {
             return;
@@ -356,11 +354,17 @@ public class Map : MonoBehaviour
         currentNode.LinesFromHere.Add(InstantiateLine(currentNode.transform.position, targetNode.transform.position));
         currentNode.RoutesFromHere.Add(targetNode);
     }
+
     private void AddBossNodeToRoutesFromThisNode(AMapNode currentNode) => AddToRoutes(currentNode, nodes.Find(node => node.row == BossRow && node.column == MiddleColumn));
+
     private bool LastRowIsBoss(int currentRow) => currentRow + 1 == BossRow;
+
     private AMapNode InstantiateNode(int currentRow, int currentColumn)
     {
-        AMapNode newNode = Instantiate(PickNodeType(), new UnnormalizedVector3(currentColumn + UnityEngine.Random.Range(-100, 100) * 0.002f, currentRow + UnityEngine.Random.Range(-100, 100) * 0.002f, 0), Quaternion.identity).GetComponent<AMapNode>();
+        AMapNode newNode = Instantiate(PickNodeType(), new Vector3(
+            (currentColumn * sizeMultiplier) + UnityEngine.Random.Range(-100, 100) * 0.002f,
+            (currentRow * sizeMultiplier) + UnityEngine.Random.Range(-100, 100) * 0.002f,
+            0), Quaternion.identity).GetComponent<AMapNode>();
         newNode.row = currentRow;
         newNode.column = currentColumn;
         newNode.seed = WorldRandomStream.Range(0, int.MaxValue);

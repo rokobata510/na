@@ -27,8 +27,6 @@ public abstract class AActor : AAttackable
         spriteRenderer = GetComponent<SpriteRenderer>();
         attackStrategyInstance = attackStrategy.Clone();
         MovementStrategyInstance = Instantiate(MovementStrategy);
-        ((ActorEvents)Events).OnIdle.AddListener(() => animator.SetBool("isWalking", false));
-        ((ActorEvents)Events).OnWalking.AddListener(() => animator.SetBool("isWalking", true));
         ((ActorEvents)Events).OnWeaponChange.AddListener(() => EquipWeapon());
         ((ActorEvents)Events).OnWeaponChange.Invoke();
     }

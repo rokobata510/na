@@ -75,9 +75,13 @@ public abstract class AGridPanelRenderer : MonoBehaviour
 
     protected virtual void OnSlotHover(GameObject slot)
     {
+        
         string name = GetSlotName(slot);
         string description = GetSlotDescription(slot);
-        ShowDescription(name, description);
+        if (name != "" && description != "")
+        {
+            ShowDescription(name, description);
+        }
     }
 
     protected virtual void OnSlotHoverEnd()

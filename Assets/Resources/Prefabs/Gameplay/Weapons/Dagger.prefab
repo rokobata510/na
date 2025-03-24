@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3494025275983430163
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5377676646948533405, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377676646948533405, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377676646948533405, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377676646948533405, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377676646948533405, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377676646948533405, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377676646948533405, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377676646948533405, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377676646948533405, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377676646948533405, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377676646948533405, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5377676646948533405, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346179509923792160, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: m_Name
+      value: Dagger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7533816879341698084, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: weaponAttacker
+      value: 
+      objectReference: {fileID: 11400000, guid: 95cfeaff22c01744cbd7d38b8738c437, type: 2}
+    - target: {fileID: 7533816879341698084, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}
+      propertyPath: weaponRenderer
+      value: 
+      objectReference: {fileID: 11400000, guid: 5b4699009befdb845b1a6a46feacf079, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 00ccdf380d6e61745a13693edbb0145e, type: 3}

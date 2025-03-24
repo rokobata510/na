@@ -19,8 +19,12 @@ public class DraggableCamera : MonoBehaviour
         GameObject mapGameObject = GameObject.Find("Map");
         Map mapScript = mapGameObject.GetComponent<Map>();
         minY = mapGameObject.transform.position.y;
-        maxY = mapGameObject.transform.position.y + mapScript.MaxRows + 1;
-        transform.position = new Vector3(mapGameObject.transform.position.x + mapScript.MaxColumns / 2, minY, transform.position.z);
+        maxY = mapGameObject.transform.position.y + (mapScript.MaxRows + 1) * mapScript.sizeMultiplier;
+        transform.position = new Vector3(
+            mapGameObject.transform.position.x + mapScript.MiddleColumn * mapScript.sizeMultiplier,
+            minY,
+            transform.position.z
+        );
     }
     void Update()
     {
@@ -36,7 +40,6 @@ public class DraggableCamera : MonoBehaviour
                         return;
                     }
                 }
-
             }
             OriginWorldSpace = Camera.main.ScreenToViewportPoint(Input.mousePosition);
             return;
@@ -66,9 +69,6 @@ public class DraggableCamera : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, minY, transform.position.z);
             }
         }
-
-
-
     }
     private bool IsPointerOverUIElement(out List<RaycastResult> hitUI)
     {
@@ -76,18 +76,14 @@ public class DraggableCamera : MonoBehaviour
         {
             position = Input.mousePosition
         };
-
         List<RaycastResult> results = new();
         graphicRaycaster.Raycast(pointerEventData, results);
-
         if (results.Count > 0)
         {
             hitUI = results;
             return true;
         }
-
         hitUI = null;
         return false;
     }
-
 }

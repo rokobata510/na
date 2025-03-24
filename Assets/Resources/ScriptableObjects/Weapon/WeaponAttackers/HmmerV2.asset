@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 780683cfdf711c24ab9f2235b663dcc2, type: 3}
+  m_Name: HmmerV2
+  m_EditorClassIdentifier: 
+  knockback: 1
+  timeOfLastAttack: 1
+  projectileSpeed: 0
+  projectileLifetime: 0.1
+  projectileOffset: 2
+  attackKeyWasReleased: 0
+  autoFire: 0
+  damage: 20
+  fireRate: 1
+  projectile: {fileID: 8285091178599153265, guid: c8b1b7f80b0a79c42922266c6a0a8800, type: 3}
+  maxChargeTime: 3
+  minChargeTime: 0.5
+  chargedFor: 0
+  chargingProjectile: {fileID: 1940157419664238231, guid: cd0536f89481cdb4fa2fc8fb8bda5cf6, type: 3}
+  SpeedMultiplierDuringWhileCharging: 0.25

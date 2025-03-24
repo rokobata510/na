@@ -28,7 +28,6 @@ public class EnemyAI : AActor
     public override void Awake()
     {
         base.Awake();
-        events.OnIdle.AddListener(() => animator.SetBool("isWalking", false));
         events.OnDamaged.AddListener((GameObject attackergameObject, IDealsDamage attackerProps) => StartCoroutine(GetKnockedBack(attackergameObject, attackerProps)));
         events.OnDeath.AddListener(() => Die());
         MovementStrategyInstance = movementStrategy.Clone();
@@ -51,6 +50,7 @@ public class EnemyAI : AActor
     public void FixedUpdate()
     {
         FlipSpriteIfNeeded();
+        animator.SetBool("Running", IsWalking);
         if (!GettingKnockedBack)
         {
             if (ExpectedToBeOnTarget())
