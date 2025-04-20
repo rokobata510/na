@@ -72,7 +72,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1379029968772834333, guid: 43bec3529b9079b478e3387ded180e57, type: 3}
       propertyPath: spawnPoints
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 556656325895404221, guid: 43bec3529b9079b478e3387ded180e57, type: 3}
       propertyPath: m_Size.x

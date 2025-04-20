@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32df72dec31f23b479925a424ac97bd7, type: 3}
   m_Name: RangedWeaponRenderer
   m_EditorClassIdentifier: 
-  distanceFromUser: 1
-  forwardsOffset: 1
+  distanceFromUser: 0
+  forwardsOffset: 0
   rotationOffset: 0.125
   LerpSpeed: 25

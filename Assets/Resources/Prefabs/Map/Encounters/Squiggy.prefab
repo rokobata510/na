@@ -77,7 +77,7 @@ PrefabInstance:
     - target: {fileID: -1775954738716389920, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: spawnableEnemies.Array.data[0]
       value: 
-      objectReference: {fileID: 3336389372410472198, guid: a0588a745ac5f934da7ea51f29e89698, type: 3}
+      objectReference: {fileID: 6997557029198610341, guid: c7ebc7976e593684887afa917d5c7da2, type: 3}
     - target: {fileID: 1069156745336873104, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: m_Name
       value: SpawnPoint
@@ -147,7 +147,7 @@ PrefabInstance:
     - target: {fileID: -1775954738716389920, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: spawnableEnemies.Array.data[0]
       value: 
-      objectReference: {fileID: 3325165835818282159, guid: 06d2da6003347954cb7f6a641457c6e3, type: 3}
+      objectReference: {fileID: 6997557029198610341, guid: c7ebc7976e593684887afa917d5c7da2, type: 3}
     - target: {fileID: 1069156745336873104, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: m_Name
       value: SpawnPoint (2)
@@ -212,7 +212,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1379029968772834333, guid: 43bec3529b9079b478e3387ded180e57, type: 3}
       propertyPath: spawnPoints
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 556656325895404221, guid: 43bec3529b9079b478e3387ded180e57, type: 3}
       propertyPath: m_Size.x

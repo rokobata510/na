@@ -76,7 +76,6 @@ public class EnemyAI : AActor
 
     protected override void GetNextStepTarget()
     {
-        //TODO: oldd meg, hogy ne legyen choppy a movement (béna megoldás az az, hogy elfelezed a kövi lépésig az időt)
         TimeSinceLastTargetingCallInSeconds = 0;
         UnnormalizedVector3 positionRoundedToHalves = new(Mathf.Round(transform.position.x * 2f) / 2f, Mathf.Round(transform.position.y * 2f) / 2f);
         target = positionRoundedToHalves + MovementStrategyInstance.GetNextStep(gameObject);

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Node
 {
-    private static readonly float raycastBoxSides = 0.1f;
+    private static readonly float raycastBoxSides = 0.5f;
     private static readonly float raycastBoxDiagonal = raycastBoxSides * MathF.Sqrt(8);
     protected UnnormalizedVector3 vector = new();
     public float X => vector.X;

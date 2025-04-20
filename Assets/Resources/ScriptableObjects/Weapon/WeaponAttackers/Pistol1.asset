@@ -15,10 +15,10 @@ MonoBehaviour:
   knockback: 3
   timeOfLastAttack: 0
   projectileSpeed: 3
-  projectileLifetime: 3
-  projectileOffset: 3
+  projectileLifetime: 2
+  projectileOffset: 1
   attackKeyWasReleased: 0
   autoFire: 1
   damage: 3
-  fireRate: 3
+  fireRate: 1
   projectile: {fileID: -8074832218415736646, guid: fb53978bd9f139541a440174d651660b, type: 3}

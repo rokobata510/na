@@ -35,7 +35,7 @@ public abstract class AMapNode : MonoBehaviour
         {
             colorBeforeHover = spriteRenderer.color;
             transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
-            spriteRenderer.color = Color.gray;
+            spriteRenderer.color = new Color(0.75f, 0.75f, 0.75f, 1f);
             hoverHasTriggered = true;
         }
     }
@@ -52,8 +52,8 @@ public abstract class AMapNode : MonoBehaviour
     public void OnPlayerOccupied()
     {
         Debug.Log("Player occupied node: " + column + "; " + row);
-        transform.localScale = new Vector3(2f, 2f, 2f);
-        spriteRenderer.color = Color.green;
+        transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+        spriteRenderer.color = Color.gray;
     }
     public void OnPlayerLeft()
     {

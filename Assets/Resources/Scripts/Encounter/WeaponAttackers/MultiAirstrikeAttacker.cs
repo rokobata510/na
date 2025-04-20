@@ -43,6 +43,10 @@ public class MultiAirstrikeAttacker : ASingleWeaponAttacker
 
     private void ExplodeChargingProjectile(GameObject selectedChargingProjectile, int layer)
     {
+        if (selectedChargingProjectile == null)
+        {
+            return;
+        }
         UnnormalizedVector3 targetOfCurrentAttack = selectedChargingProjectile.transform.position;
         Destroy(selectedChargingProjectile);
         if (!Application.isPlaying)

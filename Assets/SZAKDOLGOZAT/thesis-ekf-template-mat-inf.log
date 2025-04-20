@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.16)  24 MAR 2025 15:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.16)  20 APR 2025 08:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -470,33 +470,30 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count311
 \l__pdf_internal_box=\box57
 )
-(./thesis-ekf-template-mat-inf.aux
-
-LaTeX Warning: Label `Tomacs' multiply defined.
-
-)
+(./thesis-ekf-template-mat-inf.aux)
 \openout1 = `thesis-ekf-template-mat-inf.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-Package hyperref Info: Link coloring OFF on input line 23.
- (./thesis-ekf-template-mat-inf.out) (./thesis-ekf-template-mat-inf.out)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+Package hyperref Info: Link coloring OFF on input line 24.
+ (./thesis-ekf-template-mat-inf.out)
+(./thesis-ekf-template-mat-inf.out)
 \@outlinefile=\write3
 \openout3 = `thesis-ekf-template-mat-inf.out'.
 
@@ -536,50 +533,50 @@ Package hyperref Info: Link coloring OFF on input line 23.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-3.
+4.
 (c:/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-3.
+4.
 
 (c:/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-23.
+24.
 
 (c:/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-23.
+24.
 
 (c:/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 23.
+(Font)              <12> on input line 24.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 23.
+(Font)              <8> on input line 24.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 23.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+(Font)              <6> on input line 24.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
 
 
 (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
 
 
 (c:/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 23.
+(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 24.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 23.
+(Font)                  OMX/lmex/m/n --> OMX/cmex/m/n on input line 24.
 
 (c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -620,11 +617,11 @@ LaTeX Info: Redefining \cal on input line 577.
 LaTeX Info: Redefining \mit on input line 578.
 )
 Package babel Info: 'magyar' activates 'magyar' shorthands.
-(babel)             Reported  on input line 23.
-<eszterhazy-logo-hu.pdf, id=108, 256.07971pt x 88.04292pt>
+(babel)             Reported  on input line 24.
+<eszterhazy-logo-hu.pdf, id=285, 256.07971pt x 88.04292pt>
 File: eszterhazy-logo-hu.pdf Graphic file (type pdf)
 <use eszterhazy-logo-hu.pdf>
-Package pdftex.def Info: eszterhazy-logo-hu.pdf  used on input line 31.
+Package pdftex.def Info: eszterhazy-logo-hu.pdf  used on input line 32.
 (pdftex.def)             Requested size: 256.07907pt x 88.0427pt.
 
 
@@ -633,185 +630,381 @@ Package pdftex.def Info: eszterhazy-logo-hu.pdf  used on input line 31.
 
 {c:/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2025/
 texmf-dist/fonts/enc/dvips/lm/lm-ec.enc} <c:/texlive/2025/texmf-dist/tex/latex/
-thesis-ekf/eszterhazy-logo-hu.pdf>] (./thesis-ekf-template-mat-inf.toc)
-\tf@toc=\write4
-\openout4 = `thesis-ekf-template-mat-inf.toc'.
-
-
+thesis-ekf/eszterhazy-logo-hu.pdf>] (./thesis-ekf-template-mat-inf.toc
 
 [2
 
 ]
 
-[3]
+[3])
+\tf@toc=\write4
+\openout4 = `thesis-ekf-template-mat-inf.toc'.
 
-[4
+
+
+[4]
+
+[5
 
 ]
 1. fejezet.
 
 
-[5
+[6
 
 ]
 
-[6]
+[7]
+
+[8]
+
+[9]
+
+[10]
+
+[11]
+
+[12]
 2. fejezet.
-
-
-[7
-
-]
-3. fejezet.
-
-
-[8
-
-]
-4. fejezet.
-
-
-[9
-
-]
-5. fejezet.
-
-
-[10
-
-]
-6. fejezet.
-
-
-[11
-
-]
-Overfull \hbox (32.55444pt too wide) in paragraph at lines 96--97
-[]\T1/lmr/m/sc/12 Godotra Vár-va könyv\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Ka-th-le
-en Ku-i-per \T1/lmr/m/n/12 https://www.britannica.com/topic/Waiting-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
-[]\T1/lmr/m/sc/12 Els® pub-li-kus ké-pek a Go-dot-ról\T1/lmr/m/n/12 : \T1/lmr/m
-/it/12 Ju-an Li-niet-s-ky\T1/lmr/m/n/12 ,
- []
-
-
-Overfull \hbox (95.76828pt too wide) in paragraph at lines 102--103
-[]\T1/lmr/m/sc/12 What is Gra-du-al Ty-ping\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Je-
-remy Si-ek\T1/lmr/m/n/12 , https://jsiek.github.io/home/WhatIsGradualTyping.htm
-l 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-[]\T1/lmr/m/sc/12 Godot 3.0 re-le-a-se no-tes\T1/lmr/m/n/12 : \T1/lmr/m/it/12 J
-u-an Li-niet-s-ky\T1/lmr/m/n/12 :
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
-[]\T1/lmr/m/sc/12 Mozilla Awards $385,000 to Open Sour-ce Pro-jects as
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
-\T1/lmr/m/sc/12 part of MOSS ^^PMis-si-on Part-ners^^Q Prog-ram\T1/lmr/m/n/12 :
- \T1/lmr/m/it/12 Mo-zil-la\T1/lmr/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
-\T1/lmr/m/n/12 https://blog.mozilla.org/en/mozilla/mozilla-awards-385000-to-ope
-n-source-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
-[]\T1/lmr/m/sc/12 A uni-fi-ed ex-pe-ri-en-ce\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Go
--dot Cont-ri-bu-tors\T1/lmr/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
-[]\T1/lmr/m/sc/12 Overview of Go-dot's key con-cepts\T1/lmr/m/n/12 : \T1/lmr/m/
-it/12 Go-dot Cont-ri-bu-tors\T1/lmr/m/n/12 ,
- []
-
-
-Overfull \hbox (92.48384pt too wide) in paragraph at lines 124--125
-\T1/lmr/m/n/12 https://docs.godotengine.org/en/stable/getting_started/introduct
-ion/key_concepts_overview.html 
- []
-
-
-Overfull \hbox (115.71062pt too wide) in paragraph at lines 126--128
-[]\T1/lmr/m/n/12 : \T1/lmr/m/sc/12 GDScript\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Go-
-dot Cont-ri-bu-tors\T1/lmr/m/n/12 , https://docs.godotengine.org/en/stable/tuto
-rials/scripting/gdscriptS 
- []
-
-
-
-[12
-
-]
-7. fejezet.
 
 
 [13
 
 ]
 
-[14
+[14]
+
+[15]
+3. fejezet.
+<ImplementsIDealsDamage.png, id=508, 298.11375pt x 169.63374pt>
+File: ImplementsIDealsDamage.png Graphic file (type png)
+<use ImplementsIDealsDamage.png>
+Package pdftex.def Info: ImplementsIDealsDamage.png  used on input line 190.
+(pdftex.def)             Requested size: 220.50887pt x 125.47522pt.
+<implementsIInteractable.png, id=510, 133.49875pt x 169.63374pt>
+File: implementsIInteractable.png Graphic file (type png)
+<use implementsIInteractable.png>
+Package pdftex.def Info: implementsIInteractable.png  used on input line 200.
+(pdftex.def)             Requested size: 110.25443pt x 140.10226pt.
+
+
+[16
+
+ <./ImplementsIDealsDamage.png>]
+<implementsIRandomStream.png, id=517, 686.565pt x 169.63374pt>
+File: implementsIRandomStream.png Graphic file (type png)
+<use implementsIRandomStream.png>
+Package pdftex.def Info: implementsIRandomStream.png  used on input line 210.
+(pdftex.def)             Requested size: 441.01773pt x 108.96382pt.
+
+
+[17 <./implementsIInteractable.png> <./implementsIRandomStream.png>]
+
+[18]
+
+[19]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
+61.
+ (c:/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+[20]
+
+[21{c:/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+
+[22]
+
+[23]
+Overfull \hbox (18.10587pt too wide) in paragraph at lines 319--320
+\T1/lmr/m/n/12 Egyik a ket-t® alap el-len-fél-b®l. Alap-ér-tel-me-zet-ten egy k
+ar-dot hasz-nál, MeleeAttackStrategy-
+ []
+
+
+Overfull \hbox (132.44199pt too wide) in paragraph at lines 319--320
+\T1/lmr/m/n/12 vel te-hát ha já-té-kos 5 koc-ká-nál kis-sebb tá-vol-ság-ra van,
+ ak-kor tá-mad, il-let-ve RunTowardsPlayerMovementStrategy-
+ []
+
+
+Overfull \hbox (8.50845pt too wide) in paragraph at lines 321--322
+\T1/lmr/m/n/12 A má-sik alap el-len-fél. Alap-ér-tel-me-zet-ten egy pisz-tolyt 
+hasz-nál, és RangedAttackStrategy-
+ []
+
+
+Overfull \hbox (74.90625pt too wide) in paragraph at lines 321--322
+\T1/lmr/m/n/12 t, ami azt je-len-ti, hogy ha a já-té-kos 10 koc-ká-nál kö-ze-le
+bb van, ak-kor tá-mad. AvoidMeleeRangeStrategy-
+ []
+
+
+
+[24]
+
+[25]
+4. fejezet.
+
+
+[26
 
 ]
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Tomacs})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.209 \bibitem{Tomacs}
-                      
-<nyilatkozat/nyilatkozat.pdf, id=241, 597.50829pt x 845.0471pt>
+5. fejezet.
+
+LaTeX Warning: Citation `advancedRuleTileset' on page 27 undefined on input lin
+e 346.
+
+
+
+[27
+
+]
+
+[28] (./thesis-ekf-template-mat-inf.lof)
+\tf@lof=\write5
+\openout5 = `thesis-ekf-template-mat-inf.lof'.
+
+
+
+[29
+
+]
+Overfull \hbox (13.53276pt too wide) in paragraph at lines 359--360
+[]\T1/lmr/m/sc/12 Kathleen Ku-i-per\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Wa-i-ting f
+or Go-dot\T1/lmr/m/n/12 , https://www.britannica.com/topic/Waiting-
+ []
+
+
+Overfull \hbox (82.9814pt too wide) in paragraph at lines 365--366
+[]\T1/lmr/m/sc/12 Jeremy Si-ek\T1/lmr/m/n/12 : \T1/lmr/m/it/12 What is Gra-du-a
+l Ty-ping\T1/lmr/m/n/12 , https://jsiek.github.io/home/WhatIsGradualTyping.html
+,
+ []
+
+
+Overfull \hbox (1.21097pt too wide) in paragraph at lines 371--372
+[]\T1/lmr/m/sc/12 Juan Li-niet-s-ky\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Go-dot 3.0 
+Re-le-a-se No-tes\T1/lmr/m/n/12 , https://godotengine.org/article/godot-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
+[]\T1/lmr/m/sc/12 Godot Cont-ri-bu-tors\T1/lmr/m/n/12 : \T1/lmr/m/it/12 A Uni-f
+i-ed Ex-pe-ri-en-ce\T1/lmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+[]\T1/lmr/m/sc/12 Godot Cont-ri-bu-tors\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Over-vi
+ew of Go-dot's Key Con-cepts\T1/lmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (95.74783pt too wide) in paragraph at lines 386--387
+\T1/lmr/m/n/12 https://docs.godotengine.org/en/stable/getting_started/introduct
+ion/key_concepts_overview.html,
+ []
+
+
+Overfull \hbox (151.95094pt too wide) in paragraph at lines 389--390
+[]\T1/lmr/m/sc/12 Godot Cont-ri-bu-tors\T1/lmr/m/n/12 : \T1/lmr/m/it/12 GDScrip
+t\T1/lmr/m/n/12 , https://docs.godotengine.org/en/stable/tutorials/scripting/gd
+script.html,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
+[]\T1/lmr/m/sc/12 Refactoring Gu-ru\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Ob-ser-ver\
+T1/lmr/m/n/12 , https://refactoring.guru/design-
+ []
+
+
+Underfull \hbox (badness 6001) in paragraph at lines 395--396
+[]\T1/lmr/m/sc/12 Rena Dar-ling\T1/lmr/m/n/12 : \T1/lmr/m/it/12 12 Po-pu-lar Ga
+-mes Ma-de With The Go-dot En-gi-ne\T1/lmr/m/n/12 ,
+ []
+
+
+
+[30
+
+]
+Underfull \hbox (badness 2846) in paragraph at lines 398--399
+[]\T1/lmr/m/sc/12 Bippinbits\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Do-me Keeper\T1/lm
+r/m/n/12 , https://godotengine.org/showcase/dome-keeper/,
+ []
+
+
+Overfull \hbox (35.29716pt too wide) in paragraph at lines 404--405
+[]\T1/lmr/m/sc/12 Consumer Softpro-ducts\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Cru-el
+ty Squ-ad\T1/lmr/m/n/12 , https://godotengine.org/showcase/cruelty-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
+[]\T1/lmr/m/sc/12 Epic Ga-mes\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Abo-ut Epic Ga-me
+s\T1/lmr/m/n/12 , https://www.epicgames.com/site/en-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+[]\T1/lmr/m/sc/12 Beyond Un-re-al Wi-ki\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Leg-acy
+: Un-re-al En-gi-ne Vers-ions/2\T1/lmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (11.5548pt too wide) in paragraph at lines 416--417
+\T1/lmr/m/n/12 https://wiki.beyondunreal.com/Legacy:Unreal_Engine_Versions/#Bui
+ld_Versions,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+[]\T1/lmr/m/sc/12 Mike Thom-sen\T1/lmr/m/n/12 : \T1/lmr/m/it/12 His-to-ry of th
+e Un-re-al En-gi-ne\T1/lmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (153.83879pt too wide) in paragraph at lines 425--426
+[]\T1/lmr/m/sc/12 Game Sci-en-ce\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Black Myth: Wu
+-kong\T1/lmr/m/n/12 , https://store.steampowered.com/app/2358720/Black_Myth_Wuk
+ong/,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
+[]\T1/lmr/m/sc/12 Rare Ltd\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Sea of Thi-eves: 202
+5 Edi-ti-on\T1/lmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--429
+\T1/lmr/m/n/12 https://store.steampowered.com/app/1172620/Sea_of_Thieves_2025_E
+dition/,
+ []
+
+
+Overfull \hbox (74.39923pt too wide) in paragraph at lines 437--438
+[]\T1/lmr/m/sc/12 Zak Par-rish\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Int-ro-duc-ti-on
+ to Blu-e-prints\T1/lmr/m/n/12 , https://www.unrealengine.com/fr/blog/introduct
+ion-
+ []
+
+
+
+[31]
+Overfull \hbox (4.55466pt too wide) in paragraph at lines 449--450
+[]\T1/lmr/m/sc/12 Facepunch Stu-dios\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Rust\T1/lm
+r/m/n/12 , https://store.steampowered.com/app/252490/Rust/,
+ []
+
+
+Overfull \hbox (31.19386pt too wide) in paragraph at lines 452--453
+[]\T1/lmr/m/sc/12 Beat Ga-mes\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Beat Sa-ber\T1/lm
+r/m/n/12 , https://store.steampowered.com/app/620980/Beat_Saber/,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+[]\T1/lmr/m/sc/12 Péter Nagy\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Zsá-ner-ma-gya-rá-
+zó ^^U Mi a fe-ne az a ro-gue-li-ke?\T1/lmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
+\T1/lmr/m/n/12 https://hu.ign.com/hades/67008/feature/zsanermagyarazo-mi-a-fene
+-az-a-
+ []
+
+
+Overfull \hbox (68.65524pt too wide) in paragraph at lines 458--459
+[]\T1/lmr/m/sc/12 Vlambeer\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Nuc-lear Th-ro-ne\T1
+/lmr/m/n/12 , https://store.steampowered.com/app/242680/Nuclear_Throne/,
+ []
+
+
+Overfull \hbox (179.97256pt too wide) in paragraph at lines 461--462
+[]\T1/lmr/m/sc/12 Unity Tech-no-lo-gi-es\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Ran-do
+m\T1/lmr/m/n/12 , https://docs.unity3d.com/6000.0/Documentation/ScriptReference
+/Random.html,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
+[]\T1/lmr/m/sc/12 Microsoft\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Ran-dom Class\T1/lm
+r/m/n/12 , https://learn.microsoft.com/en-
+ []
+
+
+Overfull \hbox (172.60004pt too wide) in paragraph at lines 467--468
+[]\T1/lmr/m/sc/12 Unity Tech-no-lo-gi-es\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Vec-to
+r3\T1/lmr/m/n/12 , https://docs.unity3d.com/6000.0/Documentation/ScriptReferenc
+e/Vector3.html,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--471
+[]\T1/lmr/m/sc/12 johnsoncodehk, Dre-ad-Boy, AV-Che-mo-da-nov, Doc-torShin-o-bi
+,
+ []
+
+
+Overfull \hbox (160.62631pt too wide) in paragraph at lines 470--471
+\T1/lmr/m/sc/12 n4n0lix\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Ru-le Ti-le\T1/lmr/m/n/
+12 , https://docs.unity3d.com/Packages/com.unity.2d.tilemap.extras@4.3/manual/R
+uleTile.html,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
+[]\T1/lmr/m/sc/12 johnsoncodehk, Au-to-fi-re\T1/lmr/m/n/12 : \T1/lmr/m/it/12 Ad
+-van-ced Ru-le Overr-ide Ti-le\T1/lmr/m/n/12 ,
+ []
+
+
+Overfull \hbox (150.52432pt too wide) in paragraph at lines 473--474
+\T1/lmr/m/n/12 https://docs.unity3d.com/Packages/com.unity.2d.tilemap.extras@2.
+0/manual/AdvancedRuleOverrideTile.html,
+ []
+
+<nyilatkozat/nyilatkozat.pdf, id=611, 597.50829pt x 845.0471pt>
 File: nyilatkozat/nyilatkozat.pdf Graphic file (type pdf)
 <use nyilatkozat/nyilatkozat.pdf>
-Package pdftex.def Info: nyilatkozat/nyilatkozat.pdf  used on input line 214.
+Package pdftex.def Info: nyilatkozat/nyilatkozat.pdf  used on input line 477.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<nyilatkozat/nyilatkozat.pdf, id=243, page=1, 597.50829pt x 845.0471pt>
+<nyilatkozat/nyilatkozat.pdf, id=613, page=1, 597.50829pt x 845.0471pt>
 File: nyilatkozat/nyilatkozat.pdf Graphic file (type pdf)
 <use nyilatkozat/nyilatkozat.pdf, page 1>
 Package pdftex.def Info: nyilatkozat/nyilatkozat.pdf , page1 used on input line
- 214.
+ 477.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: nyilatkozat/nyilatkozat.pdf Graphic file (type pdf)
 <use nyilatkozat/nyilatkozat.pdf, page 1>
 Package pdftex.def Info: nyilatkozat/nyilatkozat.pdf , page1 used on input line
- 214.
+ 477.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 
 
-[15
-
-]
+[32]
 File: nyilatkozat/nyilatkozat.pdf Graphic file (type pdf)
 <use nyilatkozat/nyilatkozat.pdf, page 1>
 Package pdftex.def Info: nyilatkozat/nyilatkozat.pdf , page1 used on input line
- 214.
+ 477.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 File: nyilatkozat/nyilatkozat.pdf Graphic file (type pdf)
 <use nyilatkozat/nyilatkozat.pdf, page 1>
 Package pdftex.def Info: nyilatkozat/nyilatkozat.pdf , page1 used on input line
- 214.
+ 477.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
 
 
 File: nyilatkozat/nyilatkozat.pdf Graphic file (type pdf)
 <use nyilatkozat/nyilatkozat.pdf, page 1>
 Package pdftex.def Info: nyilatkozat/nyilatkozat.pdf , page1 used on input line
- 214.
+ 477.
 (pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
-[16
+[33
 
  <./nyilatkozat/nyilatkozat.pdf>] (./thesis-ekf-template-mat-inf.aux)
  ***********
@@ -820,28 +1013,28 @@ L3 programming layer <2025-01-18>
  ***********
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `thesis-ekf-template-mat-inf.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: 6494167FCE00765BCC86EEE1EB5D37AF;4617.
+(rerunfilecheck)             Checksum: 16FCF2D8180DAFDA22551FB287A6F106;12308.
  ) 
 Here is how much of TeX's memory you used:
- 15014 strings out of 473189
- 240881 string characters out of 5719958
- 668221 words of memory out of 5000000
- 37979 multiletter control sequences out of 15000+600000
- 618441 words of font info for 84 fonts, out of 8000000 for 9000
+ 15249 strings out of 473189
+ 245109 string characters out of 5719958
+ 673333 words of memory out of 5000000
+ 38104 multiletter control sequences out of 15000+600000
+ 618816 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,17n,93p,837b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,17n,93p,1028b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2025
 /texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2025/texmf-dist/fonts
 /type1/public/lm/lmr12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lm
 ri12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on thesis-ekf-template-mat-inf.pdf (16 pages, 187728 bytes).
+Output written on thesis-ekf-template-mat-inf.pdf (33 pages, 267708 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 273 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 707 PDF objects out of 1000 (max. 8388607)
+ 640 compressed objects within 7 object streams
+ 163 named destinations out of 1000 (max. 500000)
+ 596 words of extra memory for PDF output out of 10000 (max. 10000000)
 

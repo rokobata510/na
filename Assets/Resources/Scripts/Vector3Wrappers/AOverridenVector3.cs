@@ -63,7 +63,7 @@ public abstract class AOverridenVector3
     public UnnormalizedVector3 Round(int decimalPoints = 0) => decimalPoints switch
     {
         < 0 => throw new ArgumentException("decimalPoints must be greater than or equal to 0"),
-        0 => Round(),
+        0 => new ((int)x,(int)y),
         > 15 => throw new ArgumentException("decimalPoints must be less than or equal to 15"),
         _ => new UnnormalizedVector3((float)Math.Round(X, decimalPoints), (float)Math.Round(Y, decimalPoints), (float)Math.Round(Z, decimalPoints))
     };

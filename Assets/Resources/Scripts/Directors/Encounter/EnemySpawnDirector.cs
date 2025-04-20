@@ -54,7 +54,6 @@ public class EnemySpawnDirector : AHasReferenceToEncounterDirector
                     break;
                 }
                 int points = 1;
-                //int points = EncounterRandomStream.Range(minimumPointsAssignedPerRound, maximumPointsAssignedPerRound+1);
                 availablePointsCopy -= points;
                 spawnPoint.availablePoints += points;
            }

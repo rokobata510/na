@@ -49,7 +49,9 @@ public class SpawnPoint : MonoBehaviour
         float maxHorizontalOffset = transform.lossyScale.x / 2;
         float maxVerticalOffset = transform.lossyScale.y / 2;
         UnnormalizedVector3 spawnPosition = new(transform.position.x + EncounterRandomStream.Range(-maxHorizontalOffset, maxHorizontalOffset), transform.position.y + EncounterRandomStream.Range(-maxVerticalOffset, maxVerticalOffset));
-        Instantiate(enemy, spawnPosition, Quaternion.identity);
+        if(SpawnPositionIsNotOccupied() ) {
+            Instantiate(enemy, spawnPosition.Round(), Quaternion.identity);
+        }
 
         if (availablePoints < enemyAI.spawnCost)
         {
@@ -58,5 +60,18 @@ public class SpawnPoint : MonoBehaviour
 
         return enemyAI.spawnCost;
 
+    }
+
+    private bool SpawnPositionIsNotOccupied()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.5f);
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.gameObject != gameObject)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }

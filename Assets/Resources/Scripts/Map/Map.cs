@@ -73,49 +73,49 @@ public class Map : MonoBehaviour
         Unhover(hit);
         Hover(hit);
         HandlePlayerMovement(hit);
-        if (inputActions.PlayerActions.EnterEncounter.IsPressed() && !playerHasEnteredCurrentEncounter)
+        if (inputActions.PlayerActions.EnterEncounter.IsPressed())
         {
-            playerHasEnteredCurrentEncounter = true;
-            playerOccupiedNode.EnterEncounter();
+
         }
+
     }
 
     private void HandlePlayerMovement(RaycastHit2D hit)
     {
         if
         (
-            !Input.GetMouseButtonDown(0) ||
-            hit.collider == null ||
-            !hit.collider.TryGetComponent(out AMapNode hitNode) ||
-            (
-                playerOccupiedNode != null &&
-                !playerOccupiedNode.RoutesFromHere.Contains(hitNode)
-            ) ||
-            (
-                playerOccupiedNode == null &&
-                hitNode.row != 1
-            ) ||
-            playerHasEnteredCurrentEncounter == false
+            Input.GetMouseButtonDown(0) &&
+            hit.collider != null &&
+            hit.collider.TryGetComponent(out AMapNode hitNode) &&
+            (playerOccupiedNode == null ||
+                playerOccupiedNode.RoutesFromHere.Contains(hitNode) ||
+                playerOccupiedNode.row == hitNode.row
+                ) &&
+
+            (playerOccupiedNode != null ||
+                hitNode.row == 1) &&
+            playerHasEnteredCurrentEncounter != false
         )
         {
-            return;
+            if (playerOccupiedNode != null)
+            {
+                playerOccupiedNode.events.OnPlayerLeft.Invoke();
+            }
+            if (hitNode == null)
+            { 
+                Console.WriteLine("hitNode is null");
+            }
+            EnterHitNode(hitNode);
         }
-        if (playerOccupiedNode != null)
-        {
-            playerOccupiedNode.events.OnPlayerLeft.Invoke();
-        }
-        if (hitNode == null)
-        {
-            Console.WriteLine("hitNode is null");
-        }
-        EnterHitNode(hitNode);
     }
 
     public void EnterHitNode(AMapNode hitNode)
     {
         playerOccupiedNode = hitNode;
         playerOccupiedNode.events.OnPlayerOccupied.Invoke();
-        playerHasEnteredCurrentEncounter = false;
+
+        playerOccupiedNode.EnterEncounter();
+
     }
 
     private void Hover(RaycastHit2D hit)

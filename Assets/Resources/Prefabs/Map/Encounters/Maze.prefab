@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: -1775954738716389920, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: spawnableEnemies.Array.data[0]
       value: 
-      objectReference: {fileID: 6997557029198610341, guid: c7ebc7976e593684887afa917d5c7da2, type: 3}
+      objectReference: {fileID: 3336389372410472198, guid: a0588a745ac5f934da7ea51f29e89698, type: 3}
     - target: {fileID: 1069156745336873104, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: m_Name
       value: SpawnPoint (2)
@@ -15107,7 +15107,7 @@ PrefabInstance:
     - target: {fileID: -1775954738716389920, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: spawnableEnemies.Array.data[0]
       value: 
-      objectReference: {fileID: 6997557029198610341, guid: c7ebc7976e593684887afa917d5c7da2, type: 3}
+      objectReference: {fileID: 3336389372410472198, guid: a0588a745ac5f934da7ea51f29e89698, type: 3}
     - target: {fileID: 1069156745336873104, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: m_Name
       value: SpawnPoint (1)
@@ -15193,30 +15193,30 @@ PrefabInstance:
     - target: {fileID: -1775954738716389920, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: spawnableEnemies.Array.data[0]
       value: 
-      objectReference: {fileID: 6997557029198610341, guid: c7ebc7976e593684887afa917d5c7da2, type: 3}
+      objectReference: {fileID: 3336389372410472198, guid: a0588a745ac5f934da7ea51f29e89698, type: 3}
     - target: {fileID: 1069156745336873104, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: m_Name
       value: SpawnPoint
       objectReference: {fileID: 0}
     - target: {fileID: 8260136636950291050, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8260136636950291050, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8260136636950291050, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.6
+      value: 0.40000004
       objectReference: {fileID: 0}
     - target: {fileID: 8260136636950291050, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.276846
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 8260136636950291050, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00069999695
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8260136636950291050, guid: 80dee7ef116845d49ac47e302985235c, type: 3}
       propertyPath: m_LocalPosition.z

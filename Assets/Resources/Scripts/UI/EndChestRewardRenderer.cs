@@ -54,6 +54,7 @@ public class EndChestRewardRenderer : AGridPanelRenderer
         }
         GameObject itemDisplay = new GameObject("ItemDisplay");
         Image itemImage = itemDisplay.AddComponent<Image>();
+        itemImage.material = slot.GetComponent<Image>().material;
         itemImage.sprite = item.sprite;
         itemImage.transform.SetParent(slot.transform, false);
         itemImage.rectTransform.sizeDelta = new Vector2(slotWidth, slotHeight);

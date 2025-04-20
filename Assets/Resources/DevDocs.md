@@ -1,67 +1,29 @@
 # DevDocs
 ## TODO
 
-### szakdoga
-#### Bevezetés végére elérhetőségi linkek: Kód, build, demó videó
+### source code link 
+### build link 
+### demó videó
+### demó videó link
+### diagram jó helyen legyenek, hogyha kéri tanci
 
-##### Miért választottam a Unity-t?
-##### Unreal bemutatása (2-3 oldal)
-##### Godot bemutatása (2-3 oldal)
-##### Unity bemutatása (2-3 oldal), plusz a használt technológiák bemutatása (tilemap extras, new input system, input fixture, stb)
-#### Rendszerterv
-#### Saját projekt fejlesztése
-ebben a fejezetben írod le a tényleges projektedet (map generálás, a* pathfinding, stb.)
+működjenek a weapon itemek
 
-#### Tesztelés
 
-#### Összegzés
-##### Tervből mi valósult meg?
-##### Merre tovább?
-##### Mit csinálnék máshogy?
+## minden TODO
 
-#### Ábrák jegyzéke
-minden ábrát ide fel kell sorolni, mint egy irodalomjegzék
-ha használtam lopott képet, annak adnom kell forrást (ha netről lopott, elég megadni mikor tekintettük meg legutoljára)
-
-#### Irodalomjegyzék
-Irodalomjegyzék
-##### Citáld ezeket
-cartoon network-öt
-flash-t
-CN flash játkokat is
-c# goto-t
-az hogy unity az market leader
-nuclear throne
-rogue like
-godot engine
-MIT licensz
-#### Nyilatkozat
+## Nyilatkozat
 nem fejezet, a PDF végén olvasd el a piros szöveget
 
-### Kérdések 
-em van en dash?
-milyen idezőjelet használjak?
-jelenleg referálok játékok nevére közvetlenül. mekkora baj, hogyha citálva bent maradnak?
-    "Cyberpunk Nuclear Throne"
-Game maker sokkal közelebb ál az én játékomhoz, mint az Unreal. Melyikről írjak, írhatok-e mindkettőről?
-Gondolom ne azt írjam, hogy amiatt választotam a unity-t, mivel az volt megadva, hogy abban dolgozzak, igaz?
-Csak egy elég béna forrást találok arról, hogy mikor adták ki godot-nak az első verzióját, mekkora baj, ha őt használom?
-Citáljam a godot eredeti készítőit?
-Pont előtt, vagy után citáljak?
+## Fejlesztési idővonal
+## Enemy chapter
 
-#### Unity Testing Framework
-##### map
+## proofreading
+
+## Unity Testing Framework
+### map
 inventory works
 escape menu works
-
-player projectile-re aggro-rnak az enemy-k
-lehessen map-en váltani kiválasztott node-ot
-nem működik a weapon switching
- 
-
-
-Szuper chest menő spawn
-item rework
 
 tud úgy generálódni utolsó előtti sorban egy node, hogy csatlakozzon a bosshoz, és kereszbe legyenek a vonalai
 tud úgy generálódni alacsony column számú map második sorában node, hogy ne tudd elérni sehonnan 
@@ -70,6 +32,9 @@ tripla pisztoly csak akkor tűnjön el, hogyha végzett a user a használatával
 big lag spike
 
 # Ápr 15 után ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+csak akkor point-oljon enemy a player felé, hogyha látja is
+item rework
+jelenleg spawn point az csak kihagyja a spawnolást, hogyha foglalt a pont, ahelyett, hogy reroll-olná
 
 #### Pixel art
 

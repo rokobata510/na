@@ -127,10 +127,13 @@ public sealed class Inventory : ScriptableObject
 
     public static void Reset()
     {
+        if(instance == null) 
+            return;
+        RemainingItems.Instance.items = ListOfEveryItem.Instance.items;
         instance.Health = instance.defaultMaxHealth;
         instance.MaxHealth = instance.defaultMaxHealth;
         instance.Gold = 0;
-        instance.Weapons = new List<AWeapon> { instance.defaultWeapon };
+        instance.Weapons = new List<AWeapon> {instance.defaultWeapon};
         instance.EquippedWeapon = instance.defaultWeapon;
         instance.Items = new List<AItem>();
         instance.EquippedItems = new List<AItem>();

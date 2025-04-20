@@ -108,6 +108,7 @@ public class ShopRenderer : AGridPanelRenderer
 
         GameObject itemDisplay = new GameObject("ShopDisplay");
         Image itemImage = itemDisplay.AddComponent<Image>();
+        itemImage.material = slotImage.material;
         itemImage.sprite = item.sprite;
         itemImage.transform.SetParent(slot.transform);
         itemImage.rectTransform.sizeDelta = new Vector2(slotWidth, slotHeight);

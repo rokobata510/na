@@ -13,10 +13,8 @@ public class RunTowardsPlayerMovementStrategy : AEnemyMovementStrategy
             targetGameObject = new GameObject("LastSeenPosition");
             targetGameObject.layer = playerGameObject.layer;
             targetGameObject.tag = playerGameObject.tag;
-            targetGameObject.transform.parent = origin.transform;
         }
-        targetGameObject.transform.position = playerGameObject.transform.position;
-        bool canSeeTarget = CanSeeTarget();
+        bool canSeeTarget = CanSeeTarget(playerGameObject.transform.position);
 
         if (canSeeTarget)
         {
@@ -42,10 +40,10 @@ public class RunTowardsPlayerMovementStrategy : AEnemyMovementStrategy
         Debug.DrawRay(origin.transform.position, nextStepPosition, Color.blue, 1);
 
         //TODO: a 10000 ne magic number legyen, hanem egy rendes változó
-        bool CanSeeTarget() => SightChecker.CanSeeTarget(origin.transform.position, targetPosition, 10000);
+        bool CanSeeTarget(UnnormalizedVector3 target) => SightChecker.CanSeeTarget(origin.transform.position, target, 10000);
         void UpdateTargetGameObjectPosition()
         {
-            targetGameObject.transform.position = ((UnnormalizedVector3)targetGameObject.transform.position).RoundedToHalves;
+            targetGameObject.transform.position = ((UnnormalizedVector3)GameObject.Find("Player").transform.position).RoundedToHalves;
         }
 
         bool StandingOnTarget()
@@ -54,10 +52,10 @@ public class RunTowardsPlayerMovementStrategy : AEnemyMovementStrategy
             return Vector2.Distance(origin.transform.position, targetGameObject.transform.position) < maxDistanceBetweenThisAndTheTarget;
         }
 
-        bool EnemyHasBeenSeen() => LastSeenTargetPosition != new UnnormalizedVector3();
+        bool EnemyHasBeenSeen() => (LastSeenTargetPosition != new UnnormalizedVector3());
         void SetNextStepPositionToFirstStepOfThePath()
         {
-            nextStepPosition = PathFinding.FindPathTowardsTarget(origin, targetGameObject, 50, 20)[0] ?? new();
+            nextStepPosition = PathFinding.FindPathTowardsTarget(origin, targetGameObject, 20, 50)[0] ?? new();
         }
         //void SetNextStepTargetToFirstStepOfThePathWithReducedCost() => nextStepPosition = PathFinding.FindPathTowardsTarget(origin, lastSeenTargetPosition, 5, 20)[0] ?? new();
 

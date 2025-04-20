@@ -7,7 +7,6 @@ public abstract class AMovementStrategy : ScriptableObject
     public virtual AOverridenVector3 GetNextStep(GameObject origin)
     {
         SetMovementDirection(origin);
-        Debug.Log("targetPosition: " + nextStepPosition);
         return nextStepPosition;
     }
 

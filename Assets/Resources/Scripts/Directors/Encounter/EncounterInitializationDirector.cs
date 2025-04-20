@@ -17,7 +17,9 @@ public class EncounterInitializationDirector : AHasReferenceToEncounterDirector
         EncounterRandomStream.Seed(node.seed);
         encounter = node.Encounters[EncounterRandomStream.Range(0, node.Encounters.Count)];
         PlayerScript player = GameObject.Find("Player").GetComponent<PlayerScript>();
+        Destroy(player.weaponScript.gameObject);
         player.weapon = Inventory.Instance.EquippedWeapon.gameObject;
+        ((PlayerEvents)player.Events).OnWeaponChange.Invoke();
         GameObject encounterGameObject = Instantiate(encounter.gameObject, new UnnormalizedVector3(0, 0), Quaternion.identity);
         foreach (Transform child in encounterGameObject.transform)
         {

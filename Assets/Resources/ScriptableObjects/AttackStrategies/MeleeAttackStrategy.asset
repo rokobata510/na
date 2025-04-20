@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0edee9234d9bea74698b9b560ea91c09, type: 3}
-  m_Name: DefaultEnemyAttackStrategy
+  m_Name: MeleeAttackStrategy
   m_EditorClassIdentifier: 
   targetName: Player
   attackRange: 5

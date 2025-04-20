@@ -1,52 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
   <Class Name="PlayerScript" Collapsed="true">
-    <Position X="25.25" Y="10.75" Width="1.5" />
+    <Position X="25.25" Y="14.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQABAIABgAAAgAgADAAgAAAogAAEAIAAAAAIABAAEA=</HashCode>
+      <HashCode>AAAABAAABgAAAgAgADAAAAAAogAAEAIIAEIAIABAAEA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\PlayerScript.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AAttackStrategy" Collapsed="true">
-    <Position X="4.75" Y="27.5" Width="1.5" />
+    <Position X="30.75" Y="26.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAIABAAAAAAAAABAAAAAAAABAAAAAAAAAAAAACABI=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\AttackStrategies\AAttackStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlayerAttackStrategy" Collapsed="true">
-    <Position X="3" Y="29" Width="1.75" />
+    <Position X="29" Y="28" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAACCAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\AttackStrategies\PlayerAttackStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AActor" Collapsed="true">
-    <Position X="26.25" Y="9.5" Width="1.5" />
+    <Position X="26.25" Y="13.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>BAAAAAEEBAAAAgAgoAAAlIAACAgAAAAICAABAQABAEA=</HashCode>
+      <HashCode>BAAAAAEEBAAAAgAAoAAAlIAACAgAAAAICAABAQABAEA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\AActor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EnemyAI" Collapsed="true">
-    <Position X="27.5" Y="10.75" Width="1.5" />
+    <Position X="27.5" Y="14.75" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAABgAAAgABAARAAIAAggAAAAIAEAAAAABCAEA=</HashCode>
+      <HashCode>AAAAAAAABgAAAgAhAARAAIAAggAAAAIAEAAAAABCAEA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\EnemyAI.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MeleeWeapon" Collapsed="true">
-    <Position X="20.75" Y="10.75" Width="1.5" />
+    <Position X="20.75" Y="14.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\MeleeWeapon.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AProjectile" Collapsed="true">
-    <Position X="10" Y="8" Width="2.25" />
+    <Position X="10" Y="12" Width="2.25" />
     <TypeIdentifier>
       <HashCode>CECAACCAAAAghABAAAAAAAABAMCEARAAAAAAAAEAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\AProjectile.cs</FileName>
@@ -54,119 +54,119 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="RangedWeapon" Collapsed="true">
-    <Position X="18.5" Y="10.75" Width="1.5" />
+    <Position X="18.5" Y="14.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\RangedWeapon.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MonoBehaviourWithYLevelHandler" Collapsed="true">
-    <Position X="14" Y="6.5" Width="2.5" />
+    <Position X="14" Y="10.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAIAA=</HashCode>
       <FileName>Assets\Resources\Scripts\MonoBehaviourWithYLevelHandler.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AttackUpStrategy" Collapsed="true">
-    <Position X="0.75" Y="29" Width="1.5" />
+    <Position X="26.75" Y="28" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAI=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\AttackStrategies\AttackUpStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AMovementStrategy" Collapsed="true">
-    <Position X="7.5" Y="21.5" Width="1.5" />
+    <Position X="30.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAABAAAAAAACAAAAAAAAAAAAAAAAAAABA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\MovementStrategies\AMovementStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EnemyEvents" Collapsed="true">
-    <Position X="11.5" Y="13.25" Width="1.5" />
+    <Position X="0.5" Y="28.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Events\EnemyEvents.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MoveUpStrategy" Collapsed="true">
-    <Position X="1" Y="24.5" Width="1.75" />
+    <Position X="24" Y="3.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\MovementStrategies\MoveUpStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AEnemyMovementStrategy" Collapsed="true">
-    <Position X="6" Y="23" Width="2" />
+    <Position X="29" Y="2" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAEA=</HashCode>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAABAAAABAAAAAAgAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\MovementStrategies\AEnemyMovementStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlayerEvents" Collapsed="true">
-    <Position X="13.75" Y="13.25" Width="1.5" />
+    <Position X="2.75" Y="28.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Events\PlayerEvents.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AvoidMeleeRangeMovementStrategy" Collapsed="true">
-    <Position X="3.5" Y="24.5" Width="2.75" />
+    <Position X="26.5" Y="3.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\MovementStrategies\AvoidMeleeRangeMovementStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlayerMovementStrategy" Collapsed="true">
-    <Position X="13.5" Y="23" Width="2" />
+    <Position X="36.5" Y="2" Width="2" />
     <TypeIdentifier>
-      <HashCode>AEgAAAAAAAAAABAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AEgAAAAAAAAAAAAAAAAAACAAAAAAAAAIAEAAAAAACAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\MovementStrategies\PlayerMovementStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RunTowardsPlayerMovementStrategy" Collapsed="true">
-    <Position X="7.25" Y="24.5" Width="2.75" />
+    <Position X="30.25" Y="3.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\MovementStrategies\RunTowardsPlayerMovementStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Node" Collapsed="true">
-    <Position X="41.5" Y="2.5" Width="1.5" />
+    <Position X="39.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAQAAACAAAAACADAgAAAAAAAAAAAQIAAAIgAAAIAYQE=</HashCode>
+      <HashCode>AAQAAAAAAQAAiADAgAAAgAAAAAQAQIAAAAAAAAAAYAE=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\PathFinding\Node.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PathFinding" Collapsed="true">
-    <Position X="43.25" Y="2.5" Width="1.5" />
+    <Position X="41.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIAAAABAEAAAAAAAAAAAAAAgAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AIAAAABAEAAAAAAAAAAAAAAgAAAAAIAAAAAAAAEAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\PathFinding\PathFinding.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AEnemyAttackStrategy" Collapsed="true">
-    <Position X="7" Y="29" Width="1.75" />
+    <Position X="33" Y="28" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\AttackStrategies\AEnemyAttackStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SightChecker" Collapsed="true">
-    <Position X="45" Y="3.5" Width="1.5" />
+    <Position X="46.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\SightChecker.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BossAI" Collapsed="true">
-    <Position X="27.5" Y="12.25" Width="1.5" />
+    <Position X="27.5" Y="16.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\BossAI.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DamageZone" Collapsed="true">
-    <Position X="1.75" Y="8" Width="2.25" />
+    <Position X="1.75" Y="12" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAACCAAABAgAAAAAAAAAAAAACAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\DamageZone.cs</FileName>
@@ -174,154 +174,147 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Assets.Resources.Scripts.AttackStrategies.Classes.NeverAttackStrategy" Collapsed="true">
-    <Position X="8.5" Y="30.5" Width="1.75" />
+    <Position X="34.5" Y="29.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\AttackStrategies\NeverAttackStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AOverridenVector3" Collapsed="true">
-    <Position X="14.25" Y="26.5" Width="1.5" />
+    <Position X="29.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAEAAAAAAAAE4AUAAAAAAAAQRoAAAEBgAQMAYiE=</HashCode>
       <FileName>Assets\Resources\Scripts\Vector3Wrappers\AOverridenVector3.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NodeVector3" Collapsed="true">
-    <Position X="14.25" Y="27.75" Width="1.5" />
+    <Position X="29.25" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAEAAAgAAAEAAAAAAYAE=</HashCode>
       <FileName>Assets\Resources\Scripts\Vector3Wrappers\NodeVector3.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="NormalizedVector3" Collapsed="true">
-    <Position X="11.75" Y="27.75" Width="1.75" />
+    <Position X="26.75" Y="7.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAEAAAEAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Vector3Wrappers\NormalizedVector3.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="UnnormalizedVector3" Collapsed="true">
-    <Position X="16.5" Y="27.75" Width="1.75" />
+    <Position X="31.5" Y="7.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAIABAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Vector3Wrappers\UnnormalizedVector3.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AlwaysPathFindToPlayerMovementStrategy" Collapsed="true">
-    <Position X="7" Y="25.75" Width="3.25" />
+    <Position X="30" Y="4.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\MovementStrategies\AlwaysPathFindToPlayerMovementStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ActorEvents" Collapsed="true">
-    <Position X="12.75" Y="11.75" Width="1.5" />
+    <Position X="1.75" Y="26.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AoAAAAAAAAAAAAAAAAACAAAAAAAAgAAEAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Events\ActorEvents.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AttackableEvents" Collapsed="true">
-    <Position X="12.75" Y="10.5" Width="1.5" />
+    <Position X="1.75" Y="25.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAgAAAAAAIAAAAAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Events\AttackableEvents.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="WeaponEvents" Collapsed="true">
-    <Position X="45" Y="4.5" Width="1.5" />
+    <Position X="45" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Events\WeaponEvents.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DissapearingProjectile" Collapsed="true">
-    <Position X="7.5" Y="9.5" Width="1.75" />
+    <Position X="7.5" Y="13.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\DissapearingProjectile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SlidingProjectile" Collapsed="true">
-    <Position X="10" Y="9.5" Width="1.5" />
+    <Position X="10" Y="13.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\SlidingProjectile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DefaultEnemyAttackStrategy" Collapsed="true">
-    <Position X="5.5" Y="30.5" Width="2.25" />
+    <Position X="31.5" Y="29.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\AttackStrategies\DefaultEnemyAttackStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BouncingProjectile" Collapsed="true">
-    <Position X="12.25" Y="9.5" Width="1.75" />
+    <Position X="12.25" Y="13.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\BouncingProjectile.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DontMoveStrategy" Collapsed="true">
-    <Position X="11" Y="24.5" Width="1.75" />
+    <Position X="34" Y="3.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\MovementStrategies\DontMoveStrategy.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Encounter" Collapsed="true">
-    <Position X="43.25" Y="0.5" Width="1.5" />
+    <Position X="45" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Encounter.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PassThroughWallProjectile" Collapsed="true">
-    <Position X="4.75" Y="9.5" Width="2" />
+    <Position X="4.75" Y="13.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\PassThroughWallProjectile.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="UIManager" Collapsed="true">
-    <Position X="41.5" Y="4.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQAAAhAAAAAAAAAAAAAEIAAAAAAAAAAAAAAAAAAIAA=</HashCode>
-      <FileName>Assets\Resources\Scripts\UIManager.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Map" Collapsed="true">
-    <Position X="45" Y="1.5" Width="1.5" />
+    <Position X="45" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAQgABAAACAGCkQAMgAYgEEAIAJgIlQAQQAACARCKIo=</HashCode>
+      <HashCode>IAQgABAAAAAGCkQAMggYgEEAIAJgIlQAAUAACARCKYo=</HashCode>
       <FileName>Assets\Resources\Scripts\Map\Map.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MapLine" Collapsed="true">
-    <Position X="46.75" Y="1.5" Width="1.5" />
+    <Position X="46.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Map\MapLine.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RandomManager" Collapsed="true">
-    <Position X="39.75" Y="3.5" Width="1.5" />
+    <Position X="48.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAEAIAACAAIAUAAAEAAQAAQAAAAAAACAAA=</HashCode>
+      <HashCode>AAAEAAAAAAAEAIAACAAIAUAAAEAAQAAQAAAAAAACAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\RandomGeneratorStreams\RandomManager.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RandomState" Collapsed="true">
-    <Position X="41.5" Y="3.5" Width="1.5" />
+    <Position X="39.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAACAEAAAAAAACAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\RandomGeneratorStreams\RandomState.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="UnseededRandomStream" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="43.25" Y="4.5" Width="1.5" />
+    <Position X="43.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\RandomGeneratorStreams\UnseededRandomStream.cs</FileName>
@@ -329,42 +322,42 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="DEBUGLeaveEncounter" Collapsed="true">
-    <Position X="39.75" Y="0.5" Width="1.5" />
+    <Position X="41.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\DEBUGLeaveEncounter.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EncounterDirectorContainer" Collapsed="true">
-    <Position X="30" Y="5" Width="2.25" />
+    <Position X="3" Y="16" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AQAAAAAAQCAAAAAAQAAAAAQAAAAEAAAAAAAAAAEAAAA=</HashCode>
+      <HashCode>AAAAAAAAQCAAAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\DirectorContainers\EncounterDirectorContainer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ADirector" Collapsed="true">
-    <Position X="28" Y="25.5" Width="1.5" />
+    <Position X="19" Y="26.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAABAAAAAAEAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Directors\ADirector.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SpawnPoint" Collapsed="true">
-    <Position X="46.75" Y="3.5" Width="1.5" />
+    <Position X="48.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAgAAAAAAAAAgBAAAAAAAAAAAAAAE=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\SpawnPoint.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MapNodeEvents" Collapsed="true">
-    <Position X="39.75" Y="2.5" Width="1.5" />
+    <Position X="48.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAQBAIABAAAAABA=</HashCode>
       <FileName>Assets\Resources\Scripts\Events\MapNodeEvents.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EncounterRandomStream" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="46.75" Y="0.5" Width="1.5" />
+    <Position X="48.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAAACAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\RandomGeneratorStreams\EncounterRandomStream.cs</FileName>
@@ -372,7 +365,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="WorldRandomStream" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="46.75" Y="4.5" Width="1.5" />
+    <Position X="46.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\RandomGeneratorStreams\WorldRandomStream.cs</FileName>
@@ -380,203 +373,203 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="DraggableCamera" Collapsed="true">
-    <Position X="41.5" Y="0.5" Width="1.5" />
+    <Position X="43.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQAAAAAAAAA=</HashCode>
+      <HashCode>ACQAAAAIACAAIAAAAAAAAACAAAAAAAACAQAAACAAAAQ=</HashCode>
       <FileName>Assets\Resources\Scripts\Map\DraggableCamera.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AMapNode" Collapsed="true">
-    <Position X="22.25" Y="22.5" Width="1.5" />
+    <Position X="5.25" Y="21.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAgAAACAAQCAAEAACAAAGQAAABAYBAAABEAAJABA=</HashCode>
       <FileName>Assets\Resources\Scripts\Map\Nodes\AMapNode.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="BossNode" Collapsed="true">
-    <Position X="17.75" Y="25.5" Width="1.5" />
+    <Position X="0.75" Y="24.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Map\Nodes\BossNode.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EliteNode" Collapsed="true">
-    <Position X="20" Y="25.5" Width="1.5" />
+    <Position X="3" Y="24.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Map\Nodes\EliteNode.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EnemyNode" Collapsed="true">
-    <Position X="19" Y="24" Width="1.5" />
+    <Position X="2" Y="23" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Map\Nodes\EnemyNode.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MysteryNode" Collapsed="true">
-    <Position X="22.25" Y="24" Width="1.5" />
+    <Position X="5.25" Y="23" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Map\Nodes\MysteryNode.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ShopNode" Collapsed="true">
-    <Position X="24.5" Y="24" Width="1.5" />
+    <Position X="7.5" Y="23" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Map\Nodes\ShopNode.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TreasureNode" Collapsed="true">
-    <Position X="26.75" Y="24" Width="1.5" />
+    <Position X="9.75" Y="23" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Map\Nodes\TreasureNode.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EncounterEvents" Collapsed="true">
-    <Position X="45" Y="0.5" Width="1.5" />
+    <Position X="46.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAIAAAEAAAIAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Events\EncounterEvents.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AItem" Collapsed="true">
-    <Position X="3" Y="10.5" Width="1.5" />
+    <Position X="19.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAACAAAFAgAAAAAEAAAAAAAABAAAAAAAgQAEACAAAA=</HashCode>
+      <HashCode>AAAACAAAEAgAAAAAMAAAAAAAIBAUAAAAAAQAEACAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\AItem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EightSlashesAroundTargetEffect" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="36.25" Y="16.5" Width="2.5" />
+    <Position X="36.25" Y="20.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAgEAAAAAAggAAAAACAAAAIAAAAAQAAAAAABAAAQAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\PointTargetingEffects\EightSlashesAroundTargetEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OnStartItem" Collapsed="true">
-    <Position X="3" Y="12" Width="1.5" />
+    <Position X="18" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\OnStartItem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ATargeting" Collapsed="true">
-    <Position X="5.75" Y="0.5" Width="1.5" />
+    <Position X="29.5" Y="19.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAAEAAAAAgAAAAAAAAQAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Targeting\ATargeting.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EnemyTargeting" Collapsed="true">
-    <Position X="6.75" Y="2" Width="1.5" />
+    <Position X="30.5" Y="20.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Targeting\EnemyTargeting.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlayerTargeting" Collapsed="true">
-    <Position X="4.5" Y="2" Width="1.5" />
+    <Position X="28.25" Y="20.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Targeting\PlayerTargeting.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProjectileSpawningProps" Collapsed="true">
-    <Position X="46.75" Y="2.5" Width="1.5" />
+    <Position X="46.75" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgACAAAAAgoAAAAAAAIAAAAAAAAQAAAAAABABAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\ProjectileSpawningProps.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AHasReferenceToEncounterDirector" Collapsed="true">
-    <Position X="27.5" Y="28.5" Width="2.5" />
+    <Position X="18.5" Y="29.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Directors\Encounter\AHasReferenceToEncounterDirector.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ProjectileSpawner" Collapsed="true">
-    <Position X="45" Y="2.5" Width="1.5" />
+    <Position X="45" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\ProjectileSpawner.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AEffect" Collapsed="true">
-    <Position X="19.75" Y="13.5" Width="1.5" />
+    <Position X="19" Y="17.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAACAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OnUpdateItem" Collapsed="true">
-    <Position X="0.75" Y="12" Width="1.5" />
+    <Position X="15.75" Y="8" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAAgAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\OnUpdateItem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ADirectorContainer" Collapsed="true">
-    <Position X="29" Y="3.5" Width="1.75" />
+    <Position X="2" Y="14.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAACAQAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\DirectorContainers\ADirectorContainer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MapDirectorContainer" Collapsed="true">
-    <Position X="27.5" Y="5" Width="1.75" />
+    <Position X="0.5" Y="16" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\DirectorContainers\MapDirectorContainer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AEncounterDirector" Collapsed="true">
-    <Position X="26.75" Y="27" Width="1.5" />
+    <Position X="17.75" Y="28" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Directors\Encounter\AEncounterDirector.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ItemEffectDirector" Collapsed="true">
-    <Position X="23.75" Y="28.5" Width="1.5" />
+    <Position X="14.75" Y="29.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAgAAAQAEAAAgAAAAIAAAAABAAAAAAEAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Directors\Encounter\ItemEffectDirector.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AMapDirector" Collapsed="true">
-    <Position X="32" Y="27" Width="1.5" />
+    <Position X="23" Y="28" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Directors\Map\AMapDirector.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="InventoryDirector" Collapsed="true">
-    <Position X="32" Y="28.5" Width="1.5" />
+    <Position X="23" Y="29.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAACAAAAAAAAAEAAAAIAABAABACAAAAAAAAAGA=</HashCode>
+      <HashCode>AAEAAAAAAAAAAAAAAAEAAAAIAAAAABACAAAAAAAAAEA=</HashCode>
       <FileName>Assets\Resources\Scripts\Directors\Map\InventoryDirector.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Inventory" Collapsed="true">
-    <Position X="41.5" Y="1.5" Width="1.5" />
+    <Position X="46.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAQAAAgAACAAAAAgAAAAAABBAAAAQQAAAEAAAAFE=</HashCode>
+      <HashCode>AAQCCQAIAgAADAAAAIgAAAAAIBBAAAAQQAAAEAAAAFk=</HashCode>
       <FileName>Assets\Resources\Scripts\Map\Inventory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EncounterInitializationDirector" Collapsed="true">
-    <Position X="26" Y="29.75" Width="2.25" />
+    <Position X="17" Y="30.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAAAAAAAAAAAAAAIAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Directors\Encounter\EncounterInitializationDirector.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EnemySpawnDirector" Collapsed="true">
-    <Position X="29" Y="29.75" Width="2.25" />
+    <Position X="20" Y="30.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAIAACAAAAAAAAAAAAAEAAAIAAACABAAACAAEAIAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Directors\Encounter\EnemySpawnDirector.cs</FileName>
@@ -585,13 +578,13 @@
   <Class Name="EndChest" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="39.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAYAAAAAAAAAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <HashCode>AAAAAAAAAGAAYAAAAAAAAAAAIEAIAAAAAAAAAAIAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\EndChest.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="AWeapon" Collapsed="true">
-    <Position X="20.25" Y="8" Width="2.25" />
+    <Position X="20.25" Y="12" Width="2.25" />
     <TypeIdentifier>
       <HashCode>BAAAAgQAAAIAgAAAAEAgAAAAAJAAAAAAAAACAIAACAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\AWeapon.cs</FileName>
@@ -605,28 +598,28 @@
     </TypeIdentifier>
   </Class>
   <Class Name="MeleeWeaponRenderer" Collapsed="true">
-    <Position X="3.25" Y="20.5" Width="2" />
+    <Position X="3.5" Y="9.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\WeaponRenderer\MeleeWeaponRenderer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AWeaponRenderer" Collapsed="true">
-    <Position X="5.25" Y="19" Width="1.75" />
+    <Position X="6.5" Y="8" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AQAAAAgEAIACAAAAAAAAEAAAAAAAAAAKgAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\WeaponRenderer\AWeaponRenderer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RangedWeaponRenderer" Collapsed="true">
-    <Position X="6" Y="20.5" Width="2" />
+    <Position X="6.25" Y="9.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\WeaponRenderer\RangedWeaponRenderer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClonableScriptableObject" Collapsed="true">
-    <Position X="5.25" Y="17.5" Width="2" />
+    <Position X="6.5" Y="6.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
       <FileName>Assets\Resources\Scripts\ClonableScriptableObject.cs</FileName>
@@ -635,7 +628,7 @@
   <Class Name="AMultipleWeaponAttacker" Collapsed="true">
     <Position X="19.25" Y="3.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAACAAAIAAAACAQAAAAAAAIAAAEAAAAAAAAAAIEA=</HashCode>
+      <HashCode>AAAAAACAAAIAAAACAQAAAAAAAIAAAEAAAAAAAAAAKAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\WeaponAttackers\AMultipleWeaponAttacker.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -661,7 +654,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="NullWeaponRenderer" Collapsed="true">
-    <Position X="0.75" Y="20.5" Width="1.75" />
+    <Position X="1" Y="9.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAACACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\WeaponRenderer\NullWeaponRenderer.cs</FileName>
@@ -689,14 +682,14 @@
     </TypeIdentifier>
   </Class>
   <Class Name="AProjectileWeapon" Collapsed="true">
-    <Position X="19.5" Y="9.5" Width="1.75" />
+    <Position X="19.5" Y="13.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\AProjectileWeapon.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ColliderWeapon" Collapsed="true">
-    <Position X="23" Y="9.5" Width="1.5" />
+    <Position X="23" Y="13.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\ColliderWeapon.cs</FileName>
@@ -711,28 +704,28 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ListOfEveryItem" Collapsed="true">
-    <Position X="43.25" Y="1.5" Width="1.5" />
+    <Position X="41.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAAAAAAAAAAAgAAAAAAAAAAAAAQAAAAAAACAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\ListOfEveryItem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AAttackable" Collapsed="true">
-    <Position X="26" Y="8" Width="2.25" />
+    <Position X="26" Y="12" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAIAAAAAABAACAgAAAQAACAAgAAAAAAAAAAAAAAAEk=</HashCode>
+      <HashCode>AAAIAAAAAABAACAgAAAQAACAAgAAAAAAAAAAAAAAAAk=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\AAttackable.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tom" Collapsed="true">
-    <Position X="39.75" Y="4.5" Width="1.5" />
+    <Position X="41.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\Tom.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TriggerItemEffectOnWallContactProjectile" Collapsed="true">
-    <Position X="14.75" Y="9.5" Width="3" />
+    <Position X="14.75" Y="13.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\TriggerItemEffectOnWallContactProjectile.cs</FileName>
@@ -746,198 +739,191 @@
     </TypeIdentifier>
   </Class>
   <Class Name="RoundRobinMultiWeaponRenderer" Collapsed="true">
-    <Position X="8.75" Y="20.5" Width="2.75" />
+    <Position X="9" Y="9.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AQAAAAwAAAACAACAAAAAgAAAAAAAAAAAAAEAAACAAAA=</HashCode>
+      <HashCode>AQAAAAwAAAACAACAAAAAgAAAAAAAAAAAAAAAAACAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\WeaponRenderer\RoundRobinMultiWeaponRenderer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AAttackableTargetingEffect" Collapsed="true">
-    <Position X="22.25" Y="15" Width="2" />
+    <Position X="22.25" Y="19" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAABAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\AAttackableTargetingEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AActorTargetingEffect" Collapsed="true">
-    <Position X="24.75" Y="16.5" Width="1.75" />
+    <Position X="24.75" Y="20.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAIAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\ActorTargeting\AActorTargetingEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MultiplySpeedEffect" Collapsed="true">
-    <Position X="16" Y="17.75" Width="1.75" />
+    <Position X="16" Y="21.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\ActorTargeting\MultiplySpeedEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AWeaponAttackerTargetingEffect" Collapsed="true">
-    <Position X="25.75" Y="17.75" Width="2.25" />
+    <Position X="25.75" Y="21.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAIA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\ActorTargeting\WeaponAttackerTargeting\AWeaponAttackerTargetingEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MultiplyDamageEffect" Collapsed="true">
-    <Position X="18.5" Y="19.25" Width="2" />
+    <Position X="18.5" Y="23.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\ActorTargeting\WeaponAttackerTargeting\MultiplyDamageEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MultiptyKnockbackEffect" Collapsed="true">
-    <Position X="21.25" Y="19.25" Width="2" />
+    <Position X="21.25" Y="23.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\ActorTargeting\WeaponAttackerTargeting\MultiptyKnockbackEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AProjectileAttackerTargetingEffect" Collapsed="true">
-    <Position X="28.5" Y="19.25" Width="2.25" />
+    <Position X="28.5" Y="23.25" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\ActorTargeting\WeaponAttackerTargeting\ProjectileAttackerTargeting\AProjectileAttackerTargetingEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MulitplyProjectileLifetimeEffect" Collapsed="true">
-    <Position X="24" Y="20.75" Width="2.5" />
+    <Position X="24" Y="24.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\ActorTargeting\WeaponAttackerTargeting\ProjectileAttackerTargeting\MulitplyProjectileLifetimeEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MultiplyFirerateEffect" Collapsed="true">
-    <Position X="27.25" Y="20.75" Width="2.25" />
+    <Position X="27.25" Y="24.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAABAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\ActorTargeting\WeaponAttackerTargeting\ProjectileAttackerTargeting\MultiplyFirerateEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MultiplyProjectileSpeedEffect" Collapsed="true">
-    <Position X="30.25" Y="20.75" Width="2.25" />
+    <Position X="30.25" Y="24.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAABAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\ActorTargeting\WeaponAttackerTargeting\ProjectileAttackerTargeting\MultiplyProjectileSpeedEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SetAutoFireEffect" Collapsed="true">
-    <Position X="33.25" Y="20.75" Width="2.25" />
+    <Position X="33.25" Y="24.75" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\ActorTargeting\WeaponAttackerTargeting\ProjectileAttackerTargeting\SetAutoFireEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AddHealthEffect" Collapsed="true">
-    <Position X="11" Y="16.5" Width="1.75" />
+    <Position X="11" Y="20.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAQAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\AddHealthEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MultiplyHealthEffect" Collapsed="true">
-    <Position X="13.5" Y="16.5" Width="1.75" />
+    <Position X="13.5" Y="20.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\MultiplyHealthEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MultiplyInvincibilityFramesEffect" Collapsed="true">
-    <Position X="2.25" Y="15" Width="2.5" />
+    <Position X="2.25" Y="19" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAgA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\AttackableTargeting\MultiplyInvincibilityFramesEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ChanceToTriggerEffectWrapper" Collapsed="true">
-    <Position X="5.5" Y="15" Width="2.5" />
+    <Position X="5.5" Y="19" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\ChanceToTriggerEffectWrapper.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="MultipleEffect" Collapsed="true">
-    <Position X="8.75" Y="15" Width="1.5" />
+    <Position X="8.75" Y="19" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\MultipleEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="APointTargetingEffect" Collapsed="true">
-    <Position X="36.5" Y="15" Width="1.75" />
+    <Position X="36.5" Y="19" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Effects\PointTargetingEffects\APointTargetingEffect.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OnEnemyDeathItem" Collapsed="true">
-    <Position X="5.25" Y="12" Width="1.75" />
+    <Position X="20.25" Y="8" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\OnEnemyDeathItem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RemainingItems" Collapsed="true">
-    <Position X="43.25" Y="3.5" Width="1.5" />
+    <Position X="41.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAEAAAAgAAAAAAABAQAAAQAAAAAAACAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAEAAAAgAAAAAAABAQAAAQAAAAACgCAI=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\RemainingItems.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AActorTargetingTrigger" Collapsed="true">
-    <Position X="23.75" Y="2" Width="1.75" />
+    <Position X="6.75" Y="26" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Triggers\AActorTargetingTrigger.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="AEnemyTargetingTrigger" Collapsed="true">
-    <Position X="23.75" Y="3.5" Width="1.75" />
+    <Position X="6.75" Y="27.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Triggers\AEnemyTargetingTrigger.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ATrigger" Collapsed="true">
-    <Position X="26.25" Y="0.5" Width="1.5" />
+    <Position X="9.25" Y="24.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Triggers\ATrigger.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OnEnemyDeathTrigger" Collapsed="true">
-    <Position X="23.75" Y="4.75" Width="2" />
+    <Position X="6.75" Y="28.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Triggers\OnEnemyDeathTrigger.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OnStartTrigger" Collapsed="true">
-    <Position X="26.5" Y="2" Width="1.5" />
+    <Position X="9.5" Y="26" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Triggers\OnStartTrigger.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TimedTrigger" Collapsed="true">
-    <Position X="28.75" Y="2" Width="1.5" />
+    <Position X="11.75" Y="26" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Items\Triggers\TimedTrigger.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="GridPanelRenderer" Collapsed="true">
-    <Position X="0.5" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AQAAAAAACIAAEAAQAQAAAEAAAQBAQAUIAAAIAAAAAEA=</HashCode>
-      <FileName>Assets\Resources\Scripts\UI\AGridPanelRenderer.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="InventoryRenderer" Collapsed="true">
-    <Position X="0.5" Y="5" Width="1.75" />
+    <Position X="11.75" Y="17.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAIEggAQAAAAABAAAEAAACAAAAAAAACIAAAAAEA=</HashCode>
+      <HashCode>AAAAAAIEigAQAAAAABAAAEAAICBAAAAEAACIAAAAAEA=</HashCode>
       <FileName>Assets\Resources\Scripts\UI\InventoryRenderer.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -955,36 +941,178 @@
       <FileName>Assets\Resources\Scripts\Encounter\WeaponAttackers\MultiAirstrikeAttacker.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="BarrelFragment" Collapsed="true">
+    <Position X="7.5" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAoAAAAAAAAAAAAAAAAgAAAAAAABAAACACAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\Encounter\Gameplay\BarrelFragment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SuperDuperEndChest" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\Encounter\Gameplay\SuperDuperEndChest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MortarRenderer" Collapsed="true">
+    <Position X="12.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\Encounter\WeaponRenderer\MortarRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InventoryEvents" Collapsed="true">
+    <Position X="48.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgAAAAAIBAAAAAAAAAEAAAAAAAAAAAQAAAQAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\Events\InventoryEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="@InputActions" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEESCAAAECCgABAAAAAACBIBAAIAAGAEAAAggABQAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\InputActions\InputActions.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WeaponContainingItem" Collapsed="true">
+    <Position X="22.75" Y="8" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\Items\WeaponContainingItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AEndOfRunScreen" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\AEndOfRunScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AGridPanelRenderer" Collapsed="true">
+    <Position X="14.25" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABCAAAEEAYAQBAgEAAIQBIAAEMAAEIAAgBAEA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\AGridPanelRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeathScreen" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\DeathScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndChestRewardRenderer" Collapsed="true">
+    <Position X="16.5" Y="17.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIIACAAQAAAAAAgCAEgAMABAAAAEAAAIAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\EndChestRewardRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndChestSlotData" Collapsed="true">
+    <Position X="41.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\EndChestRewardRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoldRenderer" Collapsed="true">
+    <Position X="43.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\GoldRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealthRenderer" Collapsed="true">
+    <Position X="45" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\HealthRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InventorySlotData" Collapsed="true">
+    <Position X="39.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\InventoryRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenuButtons" Collapsed="true">
+    <Position X="43.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\MainMenuButtons.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseMenuManager" Collapsed="true">
+    <Position X="43.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAhAAAAAAAAAAAAAEIAAAAAIAAAIAEAAAAAAKEA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\PauseMenuManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScrapToHealRenderer" Collapsed="true">
+    <Position X="43.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAQgAAACAAAAAAAIAABAAAAAQAAAEAAAQCAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\ScrapToHealRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopSlotData" Collapsed="true">
+    <Position X="45" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\ShopRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopRenderer" Collapsed="true">
+    <Position X="14.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQUAAAACCCAQEAABAAACDGAAIABAAAAEAAgIAAAABAQ=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\ShopRenderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinScreen" Collapsed="true">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Resources\Scripts\UI\WinScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="IAttackStrategy&lt;T&gt;" Collapsed="true">
-    <Position X="41.5" Y="5.75" Width="1.5" />
+    <Position X="41.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\IAttackStrategy.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="IInteractable" Collapsed="true">
-    <Position X="45" Y="5.75" Width="1.5" />
+    <Position X="45" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\IInteractable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="IRandomStream" Collapsed="true">
-    <Position X="46.75" Y="5.75" Width="1.5" />
+    <Position X="46.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\RandomGeneratorStreams\IRandomStream.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="IAbilityUser" Collapsed="true">
-    <Position X="39.75" Y="5.75" Width="1.5" />
+    <Position X="39.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\IAbilityUser.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="IDealsDamage" Collapsed="true">
-    <Position X="43.25" Y="5.75" Width="1.5" />
+    <Position X="43.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAACCAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Assets\Resources\Scripts\Encounter\Gameplay\IDealsDamage.cs</FileName>
